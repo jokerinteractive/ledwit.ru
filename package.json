@@ -1,0 +1,65 @@
+{
+  "name": "ledwit",
+  "version": "0.1.0",
+  "description": "Светодиодные решения от ledwit",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "babel-preset-env": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-concat": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-data": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-merge-json": "latest",
+    "gulp-notify": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-uglify": "latest",
+    "gulp-webp": "latest",
+    "imagemin-mozjpeg": "latest",
+    "imagemin-pngquant": "latest",
+    "pixel-glass": "github:makehtml/pixel-glass",
+    "stylelint": "latest",
+    "stylelint-config-recess-order": "latest",
+    "stylelint-config-standard": "latest",
+    "stylelint-scss": "latest"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",
+    "test": "stylelint 'src/sass/**/*.scss' --config .stylelintrc.json --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokerinteractive/ledwit.ru.git"
+  },
+  "author": "Joker Interactive",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jokerinteractive/ledwit.ru/issues"
+  },
+  "homepage": "https://github.com/jokerinteractive/ledwit.ru/",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
