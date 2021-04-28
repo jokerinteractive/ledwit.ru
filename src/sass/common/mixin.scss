@@ -1,0 +1,8 @@
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gapSm;
+  padding-left: $gapSm;
+
+  @media #{$media-lg} { max-width: $width-xl; }
+}
