@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site_name }}</title>
-  <link rel="stylesheet" href="css/style.css">
-  {% if debug and page %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site_name }}</title>
+    <link rel="stylesheet" href="css/style.css">
+    {% if debug and page %}
     <style>
       HTML {
         background-repeat: no-repeat;
@@ -26,60 +26,92 @@
     </style>
     <link href="pp/styles.css" rel="stylesheet">
     <script src="pp/script.js"></script>
-  {% endif %}
-</head>
-<body>
-  <div hidden style="display:none;">
-    {% include "common/sprite.svg" %}
-  </div>
+    {% endif %}
+  </head>
+  <body>
+    <div hidden style="display:none;">
+      {% include "common/sprite.svg" %}
+    </div>
+    <header>
+      <nav class="main-nav">
+        <a class="logo-additional" href="#"><img src="#" alt="Логотип сайта LEDWIT"></a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Возможности</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Проекты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-  {% block content %}{% endblock %}
-</main>
+      <div>
+        <a href="tel:+-----------"><p>-----------</p></a>
+      </div>
+
+      <div class="social">
+        <a class="social__link" href="#" target="_blank" aria-label="Мы в Фейсбук"></a>
+        <a class="social__link" href="#" target="_blank" aria-label="Мы в Инстаграм"></a>
+        <a class="social__link" href="#" target="_blank" aria-label="Мы в Пинтерест"></a>
+        <a class="social__link" href="#" target="_blank" aria-label="Мы в Твиттер"></a>
+        <a class="social__link" href="#" target="_blank" aria-label="Мы в Ютуб"></a>
+      </div>
+    </header>
+    <main>
+    {% block content %}{% endblock %}
+    </main>
     <footer>
       <div class="logo">
         <a href="#">
           <img src="" alt="Логотип компании LEDWIT">
         </a>
-     </div>
+      </div>
 
-     <div class="footer-navigation">
-      <ul class="footer-navigation__list">
-        <li class="footer-navigation__item">
-          <a class="footer-navigation footer-navigation--active">О нас</a>
-        </li>
-        <li class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">Возможности</a>
-        </li>
-        <li class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">Проекты</a>
-        </li>
-        <li class="footer-navigation__item">
-          <a class="footer-navigation__link" href="#">Контакты</a>
-        </li>
-      </ul>
-     </div>
+      <div class="footer-navigation">
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__item">
+            <a class="footer-navigation footer-navigation--active">О нас</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Возможности</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Проекты</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a class="footer-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
 
 
-     <div class="our-contacts">
-        <p>-----------</p>
-        <p>---@-------</p>
-     </div>
+      <div class="our-contacts">
+          <p>-----------</p>
+          <p>---@-------</p>
+      </div>
 
-     <div class="our-contacts">
-      <p>-------------</p>
-      <p>-----@------</p>
-    </div>
+      <div class="our-contacts">
+        <p>-------------</p>
+        <p>-----@------</p>
+      </div>
 
-    <div class="our-contacts">
-      <p>------------</p>
-      <p>-----@----------</p>
-    </div>
+      <div class="our-contacts">
+        <p>------------</p>
+        <p>-----@----------</p>
+      </div>
 
-    <div class="our-contacts our-contacts--offline">
-      <p>г. --------, ул. -------</p>
-      <p>тел. ----------</p>
-    </div>
+      <div class="our-contacts our-contacts--offline">
+        <p>г. --------, ул. -------</p>
+        <p>тел. ----------</p>
+      </div>
     </footer>
-  {% block js %}{% endblock %}
-</body>
+    {% block js %}{% endblock %}
+  </body>
 </html>
