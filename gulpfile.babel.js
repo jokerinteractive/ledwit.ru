@@ -173,7 +173,7 @@ export const sprite = () => src(`${path.img.root}**/*.svg`)
     inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
-  .pipe(dest(`${path.img.save}`))
+  .pipe(dest(`${path.views.root}common/`))
 
 const fonts = () => src(`${dirs.src}/fonts/*.{woff,woff2}`)
   .pipe(dest(`${dirs.dest}/fonts/`))
