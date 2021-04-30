@@ -1,13 +1,12 @@
 //Шрифты
-$font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+$font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Open Sans", arial, sans-serif;
 $font-size: 14px;
 $line-height: 1.3;
-$letter-spacing: 0;
+$letter-spacing: 0.08em;
 
 //Цвета
-$color-base: #283136;
-$color-bold: #000;
-$color-bg: #fff;
+$color-base: #fff;
+$color-bg: #000;
 $color-bg-secondary: #eee;
 $color-primary: #fb565a;
 $color-secondary: #00ca74;
