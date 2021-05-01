@@ -8,11 +8,15 @@
 }
 
 body {
-  font: $font-size/$line-height $font-family;
+  font: $font-size $font-family;
+  line-height: $line-height;
   color: $color-base;
   background-color: $color-bg;
   letter-spacing: $letter-spacing;
   min-width: $width-xs;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 
   @media #{$media-sm} { min-width: $width-sm; }
   @media #{$media-md} { min-width: $width-md; }
@@ -22,6 +26,7 @@ body {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 
   &:hover,
   &:focus {
