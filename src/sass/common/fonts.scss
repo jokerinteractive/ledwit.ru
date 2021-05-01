@@ -1,18 +1,19 @@
 @font-face {
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserratbold.woff2"), url("../fonts/montserratbold.woff");
+}
+@font-face {
   font-weight: 400;
   font-family: "Oswald";
   font-display: swap;
-  src: url("../fonts/oswaldregular") format("woff2"), url("../fonts/oswaldregular") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 @font-face {
   font-weight: 400;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("../fonts/opensansregular") format("woff2"), url("../fonts/opensansregular") format("woff");
+  src: url("../fonts/opensansregular.woff2") format("woff2"), url("../fonts/opensansregular.woff") format("woff");
 }
-@font-face {
-  font-weight: 700;
-  font-family: "Montserrat";
-  font-display: swap;
-  src: url("../fonts/montserratbold") format("woff2"), url("../fonts/montserratbold") format("woff");
-}
+
