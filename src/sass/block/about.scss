@@ -1,11 +1,16 @@
 .about {
-  @include container;
   padding-top: 235px;
-  background-image: url("../img/main-geometric-group-small.png"), url("../img/main-image-small.jpg");
-  background-repeat: no-repeat;
-  background-position: 85px 120px, 0 -3px;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(transparent 49.7%, $color-bg 49.7%), url(../img/try.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0, -170px -84px;
+  background-size: 164%;
 }
 
 .about__title {
@@ -13,6 +18,17 @@
   max-width: 230px;
   margin-left: auto;
   margin-right: auto;
+
+
+  &::before {
+    content: "";
+    width: 148px;
+    height: 148px;
+    background-image: url(../img/main-geometric-group-small.png);
+    top: 20%;
+    left: calc(50% - 71px);
+    position: absolute;
+  }
 }
 
 .about__description {
