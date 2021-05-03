@@ -2,22 +2,22 @@
 {% extends "layout.j2" %}
 
 {% set result_gallery = [{
-  src: '',
+  src: '../images/gallery-1-small.jpg',
   alt: 'Изображение готового проекта по освещению ступенек'
 }, {
-  src: '',
+  src: '../images/gallery-2-small.jpg',
   alt: 'Изображение готового проекта по треугольному освещению потолка в торговом центре'
 }, {
-  src: '',
+  src: '../images/gallery-3-small.jpg',
   alt: 'Изображение готового проекта по освещению ламп, похожих на ветки на потолке в торговом центре'
 }, {
-  src: '',
+  src: '../images/gallery-4-small.jpg',
   alt: 'Изображение готового проекта по освещению автосалона лампами, выполненными в геометрической сетке'
 }, {
-  src: '',
+  src: '../images/gallery-5-small.jpg',
   alt: 'Изображение готового проекта по освещению потолка торгового центра, выполненными в волнообразной форме лампами'
 }, {
-  src: '',
+  src: '../images/gallery-6-small.jpg',
   alt: 'Изображение готового проекта по освещению эскалаторной зоны торгового центра'
 }] %}
 
@@ -29,97 +29,105 @@
   </div>
 
   <section class="advantages">
-    <h2 class="advantages__title">Технологии на службе стиля</h2>
-    <ul class="advantages__list">
-      <li class="advantages__item">15 лет успешной работы</li>
-      <li class="advantages__item">Собственное производство</li>
-      <li class="advantages__item">Лучшие решения поставленных задач</li>
-      <li class="advantages__item">Более тысячи воплощенных проектов</li>
-      <li class="advantages__item">Собственный инженерный центр</li>
-    </ul>
+    <div class="advantages__wrapper">
+      <h2 class="advantages__title">Технологии на службе стиля</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--arrow">15 лет успешной&nbsp;работы</li>
+        <li class="advantages__item advantages__item--production">Собственное производство</li>
+        <li class="advantages__item advantages__item--solutions">Лучшие решения поставленных задач</li>
+        <li class="advantages__item advantages__item--projects">Более тысячи воплощенных проектов</li>
+        <li class="advantages__item advantages__item--engineering">Собственный инженерный центр</li>
+      </ul>
+    </div>
   </section>
 
   <section class="results">
-    <div class="results__description">
-      <h2 class="results__title">Наши работы</h2>
-      <p class="results__text">За 15 лет работы у нас накопилось много выполненных проектов, которыми мы гордимся</p>
+    <div class="results__wrapper">
+      <div class="results__description">
+        <h2 class="results__title">Наши работы</h2>
+        <p class="results__text">За 15 лет работы у нас накопилось много выполненных проектов, которыми мы гордимся</p>
+      </div>
+      <div class="results__gallery">
+        {% for image in result_gallery %}
+          <img class="results__gallery-image" width="92" heihgt="89" src="{{ image.src }}" alt="{{ image.alt }}">
+        {% endfor %}
+      </div>
+      <a class="button" href="#">Больше работ</a>
     </div>
-
-    <div class="results__gallery">
-      {% for image in result_gallery %}
-        <img class="results__gallery-image" src="{{ image.src }}" alt="{{ image.alt }}">
-      {% endfor %}
-    </div>
-
-    <a class="button" href="#">Больше работ</a>
   </section>
 
   <section class="services">
-    <h2 class="services__title">Почему именно мы?</h2>
-    <p class="services__description">Команда высококвалифицированных специалистов «LEDWIT» участвует в реализации технически сложных проектов освещения «под ключ»</p>
-    <ul class="services__list">
-      <li class="services__item">Решение</li>
-      <li class="services__item">Проектирование</li>
-      <li class="services__item">Производство</li>
-      <li class="services__item">Поставка</li>
-      <li class="services__item">Монтаж</li>
-      <li class="services__item">Пуско-наладка</li>
-    </ul>
+    <div class="services__wrapper">
+      <h2 class="services__title">Почему именно мы?</h2>
+      <p class="services__description">Команда высококвалифицированных специалистов «LEDWIT» участвует в реализации технически сложных проектов освещения «под ключ»</p>
+      <ul class="services__list">
+        <li class="services__item services__item--decision">Решение</li>
+        <li class="services__item services__item--design">Проектирование</li>
+        <li class="services__item services__item--production">Производство</li>
+        <li class="services__item services__item--supply">Поставка</li>
+        <li class="services__item services__item--installation">Монтаж</li>
+        <li class="services__item services__item--commissioning">Пуско-наладка</li>
+      </ul>
+    </div>
 
     <div class="services__guarantee">
       <h3 class="services__guarantee-title">Гарантируем 5 лет стабильной работы</h3>
-      <p>Потребителями продукции LEDWIT являются не только коммерческие предприятия, но и частные лица.</p>
-      <p>В производстве используются эксклюзивные технологии, диоды, профиль собственного производства и высочайшего качества.</p>
-      <ul class="services__guarantee-list">
-        <li class="services__guarantee-list-item">Лидеры на рынке</li>
-        <li class="services__guarantee-list-item">Лучшие цены</li>
-        <li class="services__guarantee-list-item">Работа любой сложности</li>
-      </ul>
+      <div class="services__guarantee-wrapper">
+        <p class="services__guarantee-text">Потребителями продукции LEDWIT являются не только коммерческие предприятия, но и частные лица.</p>
+        <p>В производстве используются эксклюзивные технологии, диоды, профиль собственного производства и высочайшего качества.</p>
+        <ul class="services__guarantee-list">
+          <li class="services__guarantee-list-item">Лидеры на рынке</li>
+          <li class="services__guarantee-list-item">Лучшие цены</li>
+          <li class="services__guarantee-list-item">Работа любой сложности</li>
+        </ul>
+      </div>
       <a class="button" href="#">Оставить заявку</a>
     </div>
   </section>
 
   <section class="contacts">
     <div class="contacts__summary">
-      <h2 class="contacts__title">Проектировка, поставка и монтаж систем освещения</h2>
+      <h2 class="contacts__title">Проектировка, поставка и&nbsp;монтаж систем освещения</h2>
       <div class="contacts__text-wrapper">
         <p class="contacts__text">
           Мы производим все, что светится, а значит делаем Вашу жизнь ярче
         </p>
-        <p class="contacts__text">
+        <p class="contacts__text contacts__text--indent">
           Свет - это тот фактор, который является самым важным в контексте создания интерьеров и экстерьеров.
         </p>
       </div>
-      <p class="contacts__text">
+      <p class="contacts__text contacts__text--last">
         Узнать подробности про проекты и этапы разработки, а так же получить консультацию Вы можете заполнив форму обратной связи
       </p>
     </div>
 
-    <h2 class="contacts__title">Связаться с нами</h2>
-    <form class="form" action="#">
-      <label class="form__field">Ваше имя
-        <input class="form__input" type="text" name="name">
-      </label>
+   <div class="contacts__form-wrapper">
+      <h2 class="contacts__title">Связаться с нами</h2>
+      <form class="form" action="#">
+        <label class="form__field">Ваше имя
+          <input class="form__input" type="text" name="name">
+        </label>
 
-      <label class="form__field">Телефон
-        <input class="form__input" type="tel" name="telephone">
-      </label>
+        <label class="form__field">Телефон
+          <input class="form__input" type="tel" name="telephone">
+        </label>
 
-      <label class="form__field">Город
-        <input class="form__input" type="text" name="city">
-      </label>
+        <label class="form__field">Город
+          <input class="form__input" type="text" name="city">
+        </label>
 
-      <label class="form__field">Электронная почта
-        <input class="form__input" type="email" name="email">
-      </label>
+        <label class="form__field">Электронная почта
+          <input class="form__input" type="email" name="email">
+        </label>
 
-      <label class="form__field">Комментарий
-        <textarea class="form__textarea" name="comment"></textarea>
-      </label>
+        <label class="form__field-textarea">Комментарий
+          <textarea class="form__textarea" name="comment"></textarea>
+        </label>
 
-      <p class="form__footnote">Информация полностью конфиденциальна и не передается третьим лицам</p>
-      <button class="button button--form-submit" type="submit">Отправить</button>
-    </form>
+        <p class="form__footnote">Информация полностью конфиденциальна и не передается третьим лицам</p>
+        <button class="button button--form-submit" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 {% endblock content %}
 
