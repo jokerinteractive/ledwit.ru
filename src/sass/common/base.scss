@@ -2,7 +2,6 @@
   --color-base: #{$color-base};
   --color-bg: #{$color-bg};
   --color-primary: #{$color-primary};
-  --color-secondary: #{$color-secondary};
   --color-hover: #{darken($color-primary, 15%)};
   --color-active: #{lighten($color-primary, 15%)};
 }
@@ -27,12 +26,13 @@ body {
 a {
   background-color: transparent;
   text-decoration: none;
+  color: $color-base;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: $color-hover;
     text-decoration: none;
   }
 
-  &:active { color: $color-active; }
+  &[href]:active { color: $color-active; }
 }
