@@ -1,0 +1,28 @@
+.results {
+  background-image: url("../img/honeycomb-small.png");
+  background-repeat: no-repeat;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  @include container;
+}
+
+.results__title {
+  @include title;
+}
+
+.results__text {
+  margin-bottom: 33px;
+}
+
+.results__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.results__gallery-image {
+  padding-bottom: 10px;
+}

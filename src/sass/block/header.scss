@@ -1,0 +1,13 @@
+.header {
+  @include container;
+  display: flex;
+  padding-top: 12px;
+}
+
+.header__phone-wrapper {
+  padding-left: 40px;
+  background-image: url("../img/icon-phone-big.png");
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 25px 0;
+}

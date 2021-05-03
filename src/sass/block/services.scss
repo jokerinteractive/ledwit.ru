@@ -1,0 +1,109 @@
+.services {
+  background-image: url("../img/background-small.jpg"), url("../img/advantages-image-1-small.jpg"), url("../img/advantages-image-2-small.jpg"), url("../img/advantages-image-3-small.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 600px, 0 750px, 0 900px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+  @include container;
+}
+
+.services__wrapper {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.services__description {
+  font-size: 11px;
+}
+
+.services__list {
+  @include lists-base;
+  display: grid;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  justify-content: space-between;
+  padding-bottom: 19px;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 19px;
+  grid-template-columns: repeat(3, 93px);
+  padding-left: 5px;
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+.services__item {
+  padding-top: 33px;
+  position: relative;
+  background-repeat: no-repeat;
+
+  &--decision {
+    background-image: url("../img/icon-lamp-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+
+  &--design {
+    background-image: url("../img/icon-design-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+
+  &--production {
+    background-image: url("../img/icon-production-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+
+  &--supply {
+    background-image: url("../img/icon-lorry-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+
+  &--installation {
+    background-image: url("../img/icon-assembling-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+
+  &--commissioning {
+    background-image: url("../img/icon-commissioning-big.png");
+    background-size: 45px 45px;
+    background-position: 25px -5px;
+  }
+}
+
+.services__guarantee {
+  background-image: url("../img/geometric-group-small.png");
+  background-position: 0 90px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.services__guarantee-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+  text-align: left;
+}
+
+.services__guarantee-text {
+  padding-bottom: 256px;
+}
+
+.services__guarantee-list {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 82px;
+}
+
+.services__guarantee-list-item:not(:last-child) {
+  padding-bottom: 133px;
+}
+
+.services__guarantee-list-item {
+  @include title;
+}

@@ -1,0 +1,72 @@
+.advantages {
+  @include container;
+  background-image: url("../img/geometric-background-small.png");
+  background-repeat: no-repeat;
+  margin-bottom: 6px;
+  padding-top: 20px;
+}
+
+.advantages__title {
+  @include title;
+  text-align: center;
+}
+
+.advantages__list {
+  @include lists-base;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 10px;
+  text-align: center;
+}
+
+.advantages__item {
+  width: 33%;
+  padding-top: 52px;
+  position: relative;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 53px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    z-index: -1;
+  }
+
+  &--arrow {
+    background-image: url("../img/icon-arrow-big.png");
+    background-size: 23px 15px;
+    background-position: 40px 22px;
+  }
+
+  &--production {
+    background-image: url("../img/icon-manufacturing-big.png");
+    background-size: 19px 20px;
+    background-position: 42px 19px;
+  }
+
+  &--solutions {
+    background-image: url("../img/icon-solution-big.png");
+    background-size: 22px 22px;
+    background-position: 39px 19px;
+  }
+
+  &--projects {
+    background-image: url("../img/icon-number-big.png");
+    background-size: 29px 11px;
+    background-position: 37px 25px;
+  }
+
+  &--engineering {
+    background-image: url("../img/icon-gear-big.png");
+    background-size: 21px 22px;
+    background-position: 40px 20px;
+  }
+}
+

@@ -1,0 +1,15 @@
+.button {
+  background-color: $color-primary;
+  padding: 3px 12px;
+  border-radius: 40px;
+  font-family: "Oswald", arial, sans-serif;
+  font-size: 11px;
+  color: $color-base;
+  letter-spacing: 0.08em;
+
+  &--form-submit {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 22px;
+  }
+}

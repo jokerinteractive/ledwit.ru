@@ -1,0 +1,43 @@
+.contacts {
+  background-image: url("../img/geometric-background-small-additional.png"), url("../img/mix-image-small.png");
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  background-position: 0 0, 0 310px;
+  @include container;
+  margin-bottom: 20px;
+}
+
+.contacts__title {
+  @include title;
+  text-align: center;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__summary {
+  margin-bottom: 17px;
+}
+
+.contacts__text {
+  &--indent {
+    padding-bottom: 88px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 240px;
+      height: 4px;
+      background-color:#63A1FF;
+      position: absolute;
+      display: block;
+      border-radius: 4px;
+      left: 30px;
+      top: 85px;
+    }
+  }
+
+  &--last {
+    padding-left: 10px;
+  }
+}
