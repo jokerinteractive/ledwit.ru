@@ -3,6 +3,19 @@
   margin-left: auto;
   padding-right: $gapSm;
   padding-left: $gapSm;
+  width: $width-xs;
+  box-sizing: border-box;
 
   @media #{$media-lg} { max-width: $width-xl; }
+}
+
+@mixin title {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 14px;
+}
+
+@mixin lists-base {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
