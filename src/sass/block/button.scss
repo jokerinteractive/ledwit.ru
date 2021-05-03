@@ -1,11 +1,11 @@
 .button {
-  background-color: $color-primary;
-  padding: 3px 12px;
+  padding: 2px 18px;
+  font-family: Oswald, arial, sans-serif;
   border-radius: 40px;
-  font-family: "Oswald", arial, sans-serif;
-  font-size: 11px;
   color: $color-base;
-  letter-spacing: 0.08em;
+  background-color: $color-primary;
+  font-size: 11px;
+  letter-spacing: 1.2px;
 
   &--form-submit {
     margin-left: auto;
