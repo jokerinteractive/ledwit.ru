@@ -47,27 +47,38 @@
             <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
+
+        <div class="main-nav__social">
+          <a class="social__link" href="#" target="_blank">
+            <img src="../images/icon-facebook-big.png" width="15" height="15" alt="Мы в Фейсбук">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img src="../images/icon-instagram-big.png" width="13" height="13" alt="Мы в Инстаграм">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img src="../images/icon-pinterest-big.png" width="12" height="13" alt="Мы в Пинтерест">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img src="../images/icon-twitter-big.png" width="13" height="13" alt="Мы в Твиттер">
+          </a>
+          <a class="social__link" href="#" target="_blank">
+            <img src="../images/icon-youtube-big.png" width="13" height="13" alt="Мы в Ютуб">
+          </a>
+        </div>
       </nav>
 
       <div>
-        <a href="tel:+-----------"><p>-----------</p></a>
-      </div>
-
-      <div class="social">
-        <a class="social__link" href="#" target="_blank" aria-label="Мы в Фейсбук"></a>
-        <a class="social__link" href="#" target="_blank" aria-label="Мы в Инстаграм"></a>
-        <a class="social__link" href="#" target="_blank" aria-label="Мы в Пинтерест"></a>
-        <a class="social__link" href="#" target="_blank" aria-label="Мы в Твиттер"></a>
-        <a class="social__link" href="#" target="_blank" aria-label="Мы в Ютуб"></a>
+        <a href="tel:+-----------">
+        <p class="header__phone-wrapper">-----------</p></a>
       </div>
     </header>
     <main>
     {% block content %}{% endblock %}
     </main>
-    <footer>
-      <div class="logo">
+    <footer class="footer">
+      <div class="footer__logo">
         <a href="#">
-          <img src="" alt="Логотип компании LEDWIT">
+          <img src="../images/main-logo-big.png" width="50" height="47" alt="Логотип компании LEDWIT">
         </a>
       </div>
 
@@ -88,27 +99,28 @@
         </ul>
       </div>
 
+     <div class="footer__our-contacts-wrapper">
+        <div class="footer__our-contacts">
+            <p>----------</p>
+            <p>----@------</p>
+        </div>
 
-      <div class="our-contacts">
+        <div class="footer__our-contacts">
+          <p>---------</p>
+          <p>----@----------</p>
+        </div>
+
+        <div class="footer__our-contacts">
           <p>-----------</p>
-          <p>---@-------</p>
-      </div>
-
-      <div class="our-contacts">
-        <p>-------------</p>
-        <p>-----@------</p>
-      </div>
-
-      <div class="our-contacts">
-        <p>------------</p>
-        <p>-----@----------</p>
-      </div>
-
-      <div class="our-contacts our-contacts--offline">
-        <p>г. --------, ул. -------</p>
-        <p>тел. ----------</p>
-      </div>
+          <p>---@---------</p>
+        </div>
+        <div class="footer__our-contacts footer__our-contacts--offline">
+          <p>г. ---------, ул. ---------------</p>
+          <p class="footer__our-contacts-phone">тел. --------------</p>
+        </div>
+    </div>
     </footer>
+    <script src="../js/script.js"></script>
     {% block js %}{% endblock %}
   </body>
 </html>
