@@ -3,7 +3,8 @@
 
   margin-bottom: 10px;
   padding-top: 20px;
-  background: url("../img/geometric-background-small.png") no-repeat 50% -2px;
+  background: url("../img/geometric-background-small.png") no-repeat;
+  background-size: cover, contain;
 }
 
 .advantages__title {
