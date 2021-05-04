@@ -3,7 +3,7 @@
   margin-left: auto;
   padding-right: $gapSm;
   padding-left: $gapSm;
-  width: $width-xs;
+  width: 100%;
   box-sizing: border-box;
 
   @media #{$media-lg} { max-width: $width-xl; }
