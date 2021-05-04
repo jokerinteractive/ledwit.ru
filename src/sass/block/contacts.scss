@@ -1,9 +1,8 @@
 .contacts {
-  background-image: url("../img/geometric-background-small-additional.png"), url("../img/mix-image-small.png");
-  background-repeat: no-repeat;
-  padding-top: 20px;
-  background-position: 0 0, 0 310px;
-  @include container;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 20px;
 }
 
@@ -17,6 +16,11 @@
 
 .contacts__summary {
   margin-bottom: 17px;
+  background-image: url(../img/geometric-background-small-additional.png);
+  background-position: 0 0;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .contacts__text {
@@ -40,4 +44,12 @@
   &--last {
     padding-left: 10px;
   }
+}
+
+.contacts__form-wrapper  {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-image: url("../img/mix-image-small.png");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
 }
