@@ -1,6 +1,7 @@
 .header {
   @include container;
   display: flex;
+  justify-content: space-between;
   padding-top: 15px;
 }
 
@@ -10,4 +11,14 @@
   background-repeat: no-repeat;
   background-size: 13px 13px;
   background-position: 25px 0;
+}
+
+.header__site-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  font-family: Montserrat, arial, sans-serif;
+  color: $color-primary;
+  letter-spacing: 0.08em;
+  transform: rotate(0.1deg);
 }
