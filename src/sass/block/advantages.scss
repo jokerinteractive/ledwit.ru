@@ -4,6 +4,11 @@
   margin-bottom: 10px;
   padding-top: 20px;
   background: url("../img/geometric-background-small.png") no-repeat 50% -2px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/geometric-background-small@2x.png");
+    background-size: contain;
+  }
 }
 
 .advantages__title {

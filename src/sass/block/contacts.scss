@@ -21,6 +21,12 @@
   padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/geometric-background-small-additional@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .contacts__text {
@@ -52,4 +58,8 @@
   background-image: url("../img/mix-image-small.png");
   background-repeat: no-repeat;
   background-size: cover, contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mix-image-small@2x.png");
+  }
 }

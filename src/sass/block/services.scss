@@ -9,6 +9,10 @@
   width: 100%;
   box-sizing: border-box;
   background-size: 100% 449px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/trypuzzle@2x.jpg");
+  }
 }
 
 .services__wrapper {
@@ -88,6 +92,11 @@
   background-position: 50% 48px;
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/geometric-group-small@2x.png");
+    background-size: 277px 262px;
+  }
 }
 
 .services__guarantee-wrapper {
