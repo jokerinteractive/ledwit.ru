@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies 🔧
       run: npm install
 
-    - name: Run Test 🔨
-      run: npm run test
+    # - name: Run Test 🔨
+    #   run: npm run test
 
     - name: Run Build 👷
       run: npm run build
