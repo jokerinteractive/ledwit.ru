@@ -1,0 +1,65 @@
+.contacts {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.contacts__title {
+  @include title;
+  text-align: center;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__summary {
+  margin-bottom: 17px;
+  background-image: url(../img/geometric-background-small-additional.png);
+  background-position: 0 0;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/geometric-background-small-additional@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.contacts__text {
+  &--indent {
+    padding-bottom: 88px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 80%;
+      height: 4px;
+      background-color:#63A1FF;
+      position: absolute;
+      display: block;
+      border-radius: 4px;
+      left: 30px;
+      top: 85px;
+    }
+  }
+
+  &--last {
+    padding-left: 10px;
+  }
+}
+
+.contacts__form-wrapper  {
+  padding-right: 10px;
+  padding-left: 10px;
+  background-image: url("../img/mix-image-small.png");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mix-image-small@2x.png");
+  }
+}

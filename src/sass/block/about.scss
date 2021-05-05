@@ -1,0 +1,40 @@
+.about {
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+  padding-top: 230px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: linear-gradient(transparent 180px, $color-bg 180px), url("../img/try.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+}
+
+.about__title {
+  @include title;
+
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  max-width: 230px;
+
+  &::before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 148px;
+    height: 148px;
+    content: "";
+    background-image: url("../img/main-geometric-group-small.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-geometric-group-small@2x.png");
+      background-size: 148px auto;
+    }
+  }
+}
+
+.about__description { margin-bottom: 22px; }

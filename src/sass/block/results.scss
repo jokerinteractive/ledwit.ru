@@ -1,0 +1,24 @@
+.results {
+  @include container;
+
+  background-image: linear-gradient(transparent 77px, $color-bg 77px),url("../img/tryforhoneycomb.png");
+  background-repeat: no-repeat;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  background-size: cover, contain;
+}
+
+.results__title { @include title; }
+
+.results__text { margin-bottom: 33px; }
+
+.results__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.results__gallery-image { padding-bottom: 10px; }
