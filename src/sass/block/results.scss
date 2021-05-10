@@ -10,6 +10,10 @@
   background-size: cover, contain;
 }
 
+.results__wrapper {
+  @include rubber-stopper;
+}
+
 .results__title { @include title; }
 
 .results__text { margin-bottom: 33px; }
