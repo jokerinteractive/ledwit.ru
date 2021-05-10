@@ -12,6 +12,11 @@
   background-size: cover, contain;
 }
 
+.about__wrapper {
+  @include rubber-stopper;
+}
+
+
 .about__title {
   @include title;
 
