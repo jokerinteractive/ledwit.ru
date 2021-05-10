@@ -1,8 +1,10 @@
 .header {
   @include container;
+
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  min-width: 320px;
 }
 
 .header__phone-wrapper {
