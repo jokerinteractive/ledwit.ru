@@ -29,6 +29,12 @@
   }
 }
 
+.contacts__text-wrapper {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+
 .contacts__text {
   &--indent {
     padding-bottom: 88px;
@@ -49,6 +55,8 @@
 
   &--last {
     padding-left: 10px;
+    margin: 0 auto;
+    max-width: 370px;
   }
 }
 
