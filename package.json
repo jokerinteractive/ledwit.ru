@@ -45,7 +45,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "gulp start",
-    "test": "stylelint 'src/sass/**/*.scss' --config .stylelintrc.json --fix"
+    "test": "stylelint \"src/sass/**/*.scss\" --config .stylelintrc.json --fix"
   },
   "repository": {
     "type": "git",
