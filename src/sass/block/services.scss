@@ -133,10 +133,12 @@
   margin-bottom: 82px;
 }
 
+.services__guarantee-list-item {
+  @include title;
+}
+
 .services__guarantee-list-item:not(:last-child) {
   padding-bottom: 133px;
 }
 
-.services__guarantee-list-item {
-  @include title;
-}
+
