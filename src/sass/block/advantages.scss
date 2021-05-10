@@ -11,6 +11,10 @@
   }
 }
 
+.advantages__wrapper {
+  @include rubber-stopper;
+}
+
 .advantages__title {
   @include title;
 
