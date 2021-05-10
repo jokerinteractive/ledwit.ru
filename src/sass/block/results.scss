@@ -1,7 +1,7 @@
 .results {
   @include container;
 
-  background-image: linear-gradient(transparent 77px, $color-bg 77px),url("../img/tryforhoneycomb.png");
+  background-image: linear-gradient(transparent 77px, $color-bg 77px), url("../img/tryforhoneycomb.png");
   background-repeat: no-repeat;
   font-size: 10px;
   text-align: center;

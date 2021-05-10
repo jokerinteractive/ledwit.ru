@@ -8,6 +8,7 @@
 
 .contacts__title {
   @include title;
+
   text-align: center;
   width: 246px;
   margin-left: auto;
@@ -41,10 +42,10 @@
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       width: 80%;
       height: 4px;
-      background-color:#63A1FF;
+      background-color: #63a1ff;
       position: absolute;
       display: block;
       border-radius: 4px;
@@ -60,7 +61,7 @@
   }
 }
 
-.contacts__form-wrapper  {
+.contacts__form-wrapper {
   padding-right: 10px;
   padding-left: 10px;
   background-image: url("../img/mix-image-small.png");
