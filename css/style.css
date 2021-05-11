@@ -122,7 +122,7 @@ body {
   line-height: 1.2;
   color: #fff;
   background-color: #000;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.11em;
   min-width: 320px;
   margin: 0;
   display: grid;
@@ -169,9 +169,12 @@ a {
   background-image: url("../img/icon-phone-big.png");
   background-repeat: no-repeat;
   background-size: 13px 13px;
-  background-position: 25px 0; }
+  background-position: 25px 0;
+  font-family: Oswald, arial, sans-serif;
+  font-size: 11px; }
 
 .header__site-name {
+  padding-left: 7px;
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
@@ -181,7 +184,7 @@ a {
   transform: rotate(0.1deg); }
 
 .main-nav {
-  padding-bottom: 12px;
+  padding-bottom: 3px;
   position: relative;
   width: 42%;
   order: 2;
@@ -190,7 +193,7 @@ a {
 
 .main-nav__social {
   position: absolute;
-  top: 97px;
+  top: 90px;
   left: calc(50% - 69px); }
 
 .main-nav__list {
@@ -199,11 +202,11 @@ a {
   position: absolute;
   background-color: #000;
   padding: 30px;
-  top: 35px;
+  top: 27px;
   width: 110px;
   color: #fff;
   padding-top: 1px;
-  left: calc(50% - 79px);
+  left: calc(50% - 77px);
   padding-left: 10px;
   font-family: Oswald, arial, sans-serif; }
   @media (min-width: 768px) {
@@ -250,13 +253,13 @@ a {
 
 @media (max-width: 767px) {
   .main-nav--cloced .main-nav__toggle::after {
-    width: 19px;
+    width: 18px;
     height: 3px;
     background-color: #3382fa;
     content: "";
     position: absolute;
-    top: 16px;
-    right: 3px;
+    top: 11px;
+    right: 19px;
     box-shadow: 0 5px 0 0 #3382fa, 0 10px 0 0 #3382fa;
     transform: rotate(180deg);
     border-radius: 3px; }
@@ -268,9 +271,9 @@ a {
 
 .about {
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   margin-left: auto;
-  padding-top: 230px;
+  padding-top: 228px;
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
@@ -350,7 +353,7 @@ a {
   font-family: Montserrat, arial, sans-serif;
   font-size: 14px;
   letter-spacing: .1px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   text-align: center; }
 
 .advantages__list {
@@ -366,7 +369,7 @@ a {
 .advantages__item {
   margin-bottom: 8px;
   padding-top: 40px;
-  width: 32%;
+  width: 94px;
   position: relative;
   line-height: 1;
   letter-spacing: .1px;
