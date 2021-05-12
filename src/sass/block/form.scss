@@ -5,17 +5,36 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: $color-middle-grey;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.form__legend {
+  margin-bottom: 5px;
+  font-family: Montserrat, arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: .1px;
+  text-align: center;
+  width: 90%;
+  margin-left: 9px;
+  margin-right: auto;
 }
 
 .form__input {
-  width: 130px;
+  width: 132px;
   box-sizing: border-box;
+  border-radius: 5px;
+  background: #BBD6FF;
+  border: 1px solid #0B77F7;
 }
 
 .form__textarea {
   width: 100%;
   box-sizing: border-box;
+  margin-top: 2px;
+  height: 72px;
+  border-radius: 5px;
+  background: #BBD6FF;
+  border: 1px solid #0B77F7;
 }
 
 .form__field {
@@ -25,10 +44,11 @@
 
 .form__field-textarea {
   width: 100%;
+  margin-top: 2px;
 }
 
 .form__footnote {
   font-size: 10px;
   color: $color-light-grey;
-  padding-bottom: 13px;
+  margin-bottom: 10px;
 }
