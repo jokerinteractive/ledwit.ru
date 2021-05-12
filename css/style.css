@@ -332,7 +332,7 @@ a {
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding-top: 20px;
   background: url("../img/geometric-background-small.png") no-repeat 50% -2px; }
   @media (min-width: 992px) {
@@ -417,7 +417,7 @@ a {
   font-size: 10px;
   text-align: center;
   padding-top: 13px;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   background-size: cover, contain; }
   @media (min-width: 992px) {
     .results {
@@ -432,16 +432,17 @@ a {
 .results__title {
   font-family: Montserrat, arial, sans-serif;
   font-size: 14px;
-  letter-spacing: .1px; }
+  letter-spacing: .1px;
+  margin-bottom: 7px; }
 
 .results__text {
-  margin-bottom: 33px; }
+  margin-bottom: 28px; }
 
 .results__gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 10px; }
+  padding-bottom: 5px; }
 
 .results__gallery-image {
   padding-bottom: 10px; }
@@ -449,7 +450,7 @@ a {
 .services {
   background-image: url("../img/trypuzzle.jpg");
   background-repeat: no-repeat;
-  background-position: 0 600px;
+  background-position: 0 595px;
   margin-top: 10px;
   margin-bottom: 19px;
   margin-right: auto;
@@ -463,8 +464,8 @@ a {
 
 .services__wrapper {
   text-align: center;
-  margin-bottom: 18px;
-  background-image: url(../img/trybackground.png);
+  margin-bottom: 15px;
+  background-image: url("../img/trybackground.png");
   padding-right: 10px;
   padding-left: 10px;
   background-repeat: no-repeat;
@@ -476,8 +477,16 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.services__title {
+  font-family: Montserrat, arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: .1px;
+  margin-bottom: 10px; }
+
 .services__description {
-  font-size: 11px; }
+  font-size: 11px;
+  letter-spacing: 0.11em;
+  margin-bottom: 6px; }
 
 .services__list {
   list-style-type: none;
@@ -523,14 +532,7 @@ a {
     background-position: 25px -5px; }
 
 .services__guarantee {
-  background-image: url("../img/geometric-group-small.png");
-  background-position: 50% 48px;
-  background-repeat: no-repeat;
   text-align: center; }
-  @media (min-resolution: 2dppx) {
-    .services__guarantee {
-      background-image: url("../img/geometric-group-small@2x.png");
-      background-size: 277px 262px; } }
 
 .services__guarantee-wrapper {
   min-width: 300px;
@@ -540,7 +542,14 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 11px;
-  text-align: left; }
+  text-align: left;
+  background-image: url(../img/geometric-group-small.png);
+  background-position: 12px 34px;
+  background-repeat: no-repeat; }
+  @media (min-resolution: 2dppx) {
+    .services__guarantee-wrapper {
+      background-image: url("../img/geometric-group-small@2x.png");
+      background-size: 277px 262px; } }
 
 .services__guarantee-title {
   min-width: 300px;
@@ -548,17 +557,21 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px; }
 
 .services__guarantee-text {
-  padding-bottom: 256px; }
+  margin-left: 10px; }
+  .services__guarantee-text--first {
+    padding-bottom: 240px; }
 
 .services__guarantee-list {
   list-style-type: none;
   padding-left: 0;
   text-align: center;
-  margin-top: 75px;
-  margin-bottom: 82px; }
+  margin-top: 95px;
+  margin-bottom: 86px; }
 
 .services__guarantee-list-item {
   font-family: Montserrat, arial, sans-serif;
@@ -571,7 +584,6 @@ a {
 .contacts {
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px; }
 
@@ -588,7 +600,7 @@ a {
   margin-bottom: 17px;
   background-image: url(../img/geometric-background-small-additional.png);
   background-position: 0 0;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-right: 10px;
   padding-left: 10px; }
   @media (min-resolution: 2dppx) {
@@ -602,7 +614,7 @@ a {
   max-width: 380px; }
 
 .contacts__text--indent {
-  padding-bottom: 88px;
+  margin-bottom: 85px;
   position: relative; }
   .contacts__text--indent::after {
     content: "";
@@ -615,17 +627,21 @@ a {
     left: 30px;
     top: 85px; }
 
+.contacts__text--first {
+  margin-bottom: 18px; }
+
 .contacts__text--last {
   padding-left: 10px;
   margin: 0 auto;
   max-width: 370px; }
 
 .contacts__form-wrapper {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 11px;
+  padding-left: 11px;
   background-image: url("../img/mix-image-small.png");
   background-repeat: no-repeat;
-  background-size: cover, contain; }
+  background-size: cover, contain;
+  padding-top: 25px; }
   @media (min-resolution: 2dppx) {
     .contacts__form-wrapper {
       background-image: url("../img/mix-image-small@2x.png"); } }
@@ -637,27 +653,46 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #dbdbdb;
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
+
+.form__legend {
+  margin-bottom: 5px;
+  font-family: Montserrat, arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: .1px;
+  text-align: center;
+  width: 90%;
+  margin-left: 9px;
+  margin-right: auto; }
 
 .form__input {
-  width: 130px;
-  box-sizing: border-box; }
+  width: 132px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #BBD6FF;
+  border: 1px solid #0B77F7; }
 
 .form__textarea {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-top: 2px;
+  height: 72px;
+  border-radius: 5px;
+  background: #BBD6FF;
+  border: 1px solid #0B77F7; }
 
 .form__field {
   display: flex;
   flex-direction: column; }
 
 .form__field-textarea {
-  width: 100%; }
+  width: 100%;
+  margin-top: 2px; }
 
 .form__footnote {
   font-size: 10px;
   color: #b0b0b0;
-  padding-bottom: 13px; }
+  margin-bottom: 10px; }
 
 .footer {
   margin-right: auto;
@@ -665,30 +700,41 @@ a {
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
-  min-width: 300px;
+  min-width: 320px;
   max-width: 360px;
-  display: flex; }
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 8px; }
   @media (min-width: 992px) {
     .footer {
       max-width: 1440px; } }
 
 .footer__logo {
-  margin-right: 20px; }
+  margin-right: 17px;
+  padding-top: 5px;
+  padding-left: 9px; }
 
 .footer-navigation {
   display: none; }
 
 .footer__our-contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%; }
+  width: 70%; }
 
 .footer__our-contacts {
   font-size: 7px; }
   .footer__our-contacts--offline {
     font-size: 8px;
-    padding-left: 20px; }
+    padding-left: 11px; }
+
+.footer__our-contacts-online {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 86%;
+  margin-bottom: 3px; }
+
+.footer__our-contact {
+  margin-bottom: 3px; }
 
 .footer__our-contacts-phone {
   padding-left: 30px; }
