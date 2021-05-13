@@ -2,36 +2,38 @@
 {% extends "layout.j2" %}
 
 {% set result_gallery = [{
-  src: '../images/gallery-1-small.jpg',
-  srcset: '../images/gallery-1-small@2x.jpg 2x',
+  src: './images/gallery-1-small.jpg',
+  srcset: './images/gallery-1-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по освещению ступенек'
 }, {
-  src: '../images/gallery-2-small.jpg',
-  srcset: '../images/gallery-2-small@2x.jpg 2x',
+  src: './images/gallery-2-small.jpg',
+  srcset: './images/gallery-2-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по треугольному освещению потолка в торговом центре'
 }, {
-  src: '../images/gallery-3-small.jpg',
-  srcset: '../images/gallery-3-small@2x.jpg 2x',
+  src: './images/gallery-3-small.jpg',
+  srcset: './images/gallery-3-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по освещению ламп, похожих на ветки на потолке в торговом центре'
 }, {
-  src: '../images/gallery-4-small.jpg',
-  srcset: '../images/gallery-4-small@2x.jpg 2x',
+  src: './images/gallery-4-small.jpg',
+  srcset: './images/gallery-4-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по освещению автосалона лампами, выполненными в геометрической сетке'
 }, {
-  src: '../images/gallery-5-small.jpg',
-  srcset: '../images/gallery-5-small@2x.jpg 2x',
+  src: './images/gallery-5-small.jpg',
+  srcset: './images/gallery-5-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по освещению потолка торгового центра, выполненными в волнообразной форме лампами'
 }, {
-  src: '../images/gallery-6-small.jpg',
-  srcset: '../images/gallery-6-small@2x.jpg 2x',
+  src: './images/gallery-6-small.jpg',
+  srcset: './images/gallery-6-small@2x.jpg 2x',
   alt: 'Изображение готового проекта по освещению эскалаторной зоны торгового центра'
 }] %}
 
 {% block content %}
   <div class="about">
-    <h1 class="about__title">Авторское светодиодное решение от LEDWIT</h1>
-    <p class="about__description">Российский производитель светодиодных светильников и световых конструкций среднего, крупного и особо крупного размера</p>
-    <a class="button  button--introduction" href="#">Оставить заявку</a>
+    <div class="about__wrapper">
+      <h1 class="about__title">Авторское светодиодное решение от LEDWIT</h1>
+      <p class="about__description">Российский производитель светодиодных светильников и световых конструкций среднего, крупного и особо крупного размера</p>
+      <a class="button  button--introduction" href="#">Оставить заявку</a>
+    </div>
   </div>
 
   <section class="advantages">
@@ -64,23 +66,25 @@
 
   <section class="services">
     <div class="services__wrapper">
-      <h2 class="services__title">Почему именно мы?</h2>
-      <p class="services__description">Команда высококвалифицированных специалистов «LEDWIT» участвует в реализации технически сложных проектов освещения «под ключ»</p>
-      <ul class="services__list">
-        <li class="services__item services__item--decision">Решение</li>
-        <li class="services__item services__item--design">Проектирование</li>
-        <li class="services__item services__item--production">Производство</li>
-        <li class="services__item services__item--supply">Поставка</li>
-        <li class="services__item services__item--installation">Монтаж</li>
-        <li class="services__item services__item--commissioning">Пуско-наладка</li>
-      </ul>
+      <div class="services__wrapper-rubber">
+        <h2 class="services__title">Почему именно мы?</h2>
+        <p class="services__description">Команда высококвалифицированных специалистов «LEDWIT» участвует в реализации технически сложных проектов освещения «под ключ»</p>
+        <ul class="services__list">
+          <li class="services__item services__item--decision">Решение</li>
+          <li class="services__item services__item--design">Проектирование</li>
+          <li class="services__item services__item--production">Производство</li>
+          <li class="services__item services__item--supply">Поставка</li>
+          <li class="services__item services__item--installation">Монтаж</li>
+          <li class="services__item services__item--commissioning">Пуско-наладка</li>
+        </ul>
+      </div>
     </div>
 
     <div class="services__guarantee">
       <h3 class="services__guarantee-title">Гарантируем 5 лет стабильной работы</h3>
       <div class="services__guarantee-wrapper">
-        <p class="services__guarantee-text">Потребителями продукции LEDWIT являются не только коммерческие предприятия, но и частные лица.</p>
-        <p>В производстве используются эксклюзивные технологии, диоды, профиль собственного производства и высочайшего качества.</p>
+        <p class="services__guarantee-text services__guarantee-text--first">Потребителями продукции LEDWIT являются не только коммерческие предприятия, но и частные лица.</p>
+        <p class="services__guarantee-text">В производстве используются эксклюзивные технологии, диоды, профиль собственного производства и высочайшего качества.</p>
         <ul class="services__guarantee-list">
           <li class="services__guarantee-list-item">Лидеры на рынке</li>
           <li class="services__guarantee-list-item">Лучшие цены</li>
@@ -95,7 +99,7 @@
     <div class="contacts__summary">
       <h2 class="contacts__title">Проектировка, поставка и&nbsp;монтаж систем освещения</h2>
       <div class="contacts__text-wrapper">
-        <p class="contacts__text">
+        <p class="contacts__text contacts__text--first">
           Мы производим все, что светится, а значит делаем Вашу жизнь ярче
         </p>
         <p class="contacts__text contacts__text--indent">
@@ -108,8 +112,8 @@
     </div>
 
    <div class="contacts__form-wrapper">
-      <h2 class="contacts__title">Связаться с нами</h2>
       <form class="form" action="#">
+        <legend class="form__legend">Связаться с нами</legend>
         <label class="form__field">Ваше имя
           <input class="form__input" type="text" name="name">
         </label>
