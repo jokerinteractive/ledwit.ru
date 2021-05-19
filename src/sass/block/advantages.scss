@@ -35,7 +35,7 @@
 .advantages__item {
   margin-bottom: 8px;
   padding-top: 40px;
-  width: 94px;
+  width: 30%;
   position: relative;
   line-height: 1;
   letter-spacing: .1px;
@@ -75,13 +75,13 @@
   &--projects {
     background-image: url("../img/icon-number-big.png");
     background-size: 29px 11px;
-    background-position: 50% 10px;
+    background-position: 50% 12px;
   }
 
   &--engineering {
     background-image: url("../img/icon-gear-big.png");
     background-size: 21px 22px;
-    background-position: 50% 10px;
+    background-position: 50% 7px;
   }
 }
 
