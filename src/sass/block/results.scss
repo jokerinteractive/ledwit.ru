@@ -1,13 +1,13 @@
 .results {
   @include container;
 
-  background-image: linear-gradient(transparent 77px, $color-bg 77px), url("../img/tryforhoneycomb.png");
+  background-image: linear-gradient(transparent 88px, $color-bg 88px), url("../img/tryforhoneycomb.png");
   background-repeat: no-repeat;
   font-size: 10px;
   text-align: center;
   padding-top: 13px;
   padding-bottom: 17px;
-  background-size: cover, contain;
+  background-size: auto auto, 150%, cover;
 }
 
 .results__wrapper {
@@ -26,7 +26,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  gap: 10px;
 }
 
-.results__gallery-image { padding-bottom: 10px; }
+.results__gallery-image {
+  width: 30%;
+}
