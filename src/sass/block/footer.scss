@@ -4,13 +4,13 @@
   min-width: 320px;
   max-width: 360px;
   display: flex;
-  padding-top: 7px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 6px;
 }
 
 .footer__logo {
   margin-right: 17px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 9px;
 }
 
@@ -24,6 +24,8 @@
 
 .footer__our-contacts {
   font-size: 7px;
+  font-family: Oswald, arial, sans-serif;
+  line-height: 10px;
 
   &--offline {
     font-size: 8px;
@@ -35,8 +37,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 86%;
-  margin-bottom: 3px;
 }
 
 .footer__our-contact {
