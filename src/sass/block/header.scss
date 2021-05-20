@@ -2,19 +2,19 @@
   @include container;
 
   display: flex;
-  justify-content: space-between;
   padding-top: 15px;
   min-width: 320px;
 }
 
 .header__phone-wrapper {
-  padding-left: 40px;
+  padding-left: 45px;
   background-image: url("../img/icon-phone-big.png");
   background-repeat: no-repeat;
   background-size: 13px 13px;
-  background-position: 25px 0;
+  background-position: 28px 0;
   font-family: Oswald, arial, sans-serif;
   font-size: 11px;
+  width: 139px;
 }
 
 .header__site-name {
