@@ -1,9 +1,17 @@
 .header {
   @include container;
 
-  display: flex;
   padding-top: 15px;
-  min-width: 320px;
+  background-color: rgba(0, 0, 0, .85);
+
+  @media (min-width: 500px) {
+    padding-top: 29px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  min-width: 300px;
 }
 
 .header__phone-wrapper {
@@ -15,6 +23,13 @@
   font-family: Oswald, arial, sans-serif;
   font-size: 11px;
   width: 139px;
+  margin-top: 2px;
+
+  @media (min-width: 500px) {
+    width: 105px;
+    padding-left: 27px;
+    background-position: 12px 0;
+  }
 }
 
 .header__site-name {
@@ -26,4 +41,8 @@
   color: $color-primary;
   letter-spacing: .08em;
   transform: rotate(.1deg);
+
+  @media (min-width: 500px) {
+    font-size: 18px;
+  }
 }
