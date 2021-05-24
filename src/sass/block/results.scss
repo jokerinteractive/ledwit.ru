@@ -8,6 +8,11 @@
   padding-top: 13px;
   padding-bottom: 17px;
   background-size: auto auto, 150%, cover;
+
+  @media (min-width: 500px) {
+    padding-top: 30px;
+    font-size: 14px;
+  }
 }
 
 .results__wrapper {
@@ -20,7 +25,13 @@
   margin-bottom: 7px;
 }
 
-.results__text { margin-bottom: 28px; }
+.results__text {
+  margin-bottom: 28px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 67px;
+  }
+}
 
 .results__gallery {
   display: flex;
@@ -28,6 +39,10 @@
   justify-content: space-between;
   padding-bottom: 15px;
   gap: 10px;
+
+  @media (min-width: 500px) {
+    padding-bottom: 23px;
+  }
 }
 
 .results__gallery-image {
