@@ -11,10 +11,27 @@
   background-repeat: no-repeat;
   background-size: 108px auto, cover, contain;
   background-position: 51% 143px, 0 0, 0 0;
+
+  @media (min-width: 500px) {
+    background-image: url("../img/trymainimage.png");
+    background-size: 470px auto;
+    background-position: 0 0;
+    padding-top: 318px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    margin-bottom: 44px;
+  }
 }
 
 .about__wrapper {
   @include rubber-stopper;
+
+  @media (min-width: 500px) {
+    max-width: 540px;
+    box-sizing: border-box;
+    padding-left: 146px;
+  }
 }
 
 .about__title {
@@ -24,6 +41,17 @@
   margin-bottom: 5px;
   margin-left: auto;
   max-width: 230px;
+
+  @media (min-width: 500px) {
+    max-width: fit-content;
+    margin-bottom: 16px;
+  }
 }
 
-.about__description { margin-bottom: 22px; }
+.about__description {
+  margin-bottom: 22px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 25px;
+  }
+}
