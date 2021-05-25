@@ -13,9 +13,9 @@
   background-position: 51% 143px, 0 0, 0 0;
 
   @media (min-width: 500px) {
-    background-image: url("../img/trymainimage.png");
-    background-size: 470px auto;
-    background-position: 0 0;
+    background-image: url("../img/main-logo.png"), url("../img/main-geometric-group-medium.png"), url("../img/trymainimage.png");
+    background-size: 111px 112px, 194px 175px, 470px auto;
+    background-position: 75vw 61px, 168px 85px, 0 0;
     padding-top: 318px;
     padding-left: 10px;
     padding-right: 10px;
