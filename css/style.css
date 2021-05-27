@@ -129,7 +129,11 @@ body {
   grid-template-rows: min-content 1fr min-content; }
   @media (min-width: 500px) {
     body {
-      font-size: 14px; } }
+      font-size: 14px;
+      background-image: url("../img/trymainimage.png");
+      background-size: 530px auto;
+      background-repeat: no-repeat;
+      background-position-x: 50%; } }
 
 a {
   background-color: transparent;
@@ -927,7 +931,8 @@ a {
   @media (min-width: 500px) {
     .footer__our-contacts-wrapper {
       width: 100%;
-      display: flex; } }
+      display: flex;
+      letter-spacing: normal; } }
 
 .footer__our-contacts {
   font-size: 7px;
@@ -938,7 +943,8 @@ a {
     padding-left: 11px; }
   @media (min-width: 500px) {
     .footer__our-contacts {
-      font-size: 9px; } }
+      font-size: 11px;
+      line-height: 16px; } }
 
 .footer__our-contacts-online {
   display: flex;
