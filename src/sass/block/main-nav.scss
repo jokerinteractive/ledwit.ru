@@ -25,7 +25,47 @@
     left: calc(50% + 360px);
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 8px;
+  }
+}
+
+.main-nav__social-item {
+  &--fb {
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 17px;
+    }
+  }
+
+  &--ig {
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 17px;
+    }
+  }
+
+  &--pinterest {
+    @media (min-width: 768px) {
+      width: 20px;
+      height: 19px;
+      padding-left: 6px;
+    }
+  }
+
+  &--twitter {
+    @media (min-width: 768px) {
+      width: 20px;
+      height: 19px;
+      padding-left: 6px;
+    }
+  }
+
+  &--youtube {
+    @media (min-width: 768px) {
+      width: 20px;
+      height: 15px;
+      padding-left: 6px;
+    }
   }
 }
 
