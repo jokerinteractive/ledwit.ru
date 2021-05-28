@@ -9,6 +9,7 @@
 
   @media (min-width: 500px) {
     font-size: 14px;
+    letter-spacing: .14em;
   }
 
   &--form-submit {
@@ -17,4 +18,16 @@
     padding: 3px 22px;
     border: none;
   }
+
+  &--introduction {
+    @media (min-width: 768px) {
+      padding-top: 6px;
+      padding-bottom: 4px;
+      padding-left: 31px;
+      margin-left: 3px;
+      padding-right: 29px;
+    }
+  }
 }
+
+
