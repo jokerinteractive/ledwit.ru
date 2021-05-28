@@ -13,14 +13,21 @@
   background-position: 51% 143px, 0 0, 0 0;
 
   @media (min-width: 500px) {
-    background-image: url("../img/main-logo.png"), url("../img/main-geometric-group-medium.png"), url("../img/trymainimage.png");
-    background-size: 111px 112px, 194px 175px, 470px auto;
-    background-position: 75vw 61px, 168px 85px, 0 0;
-    padding-top: 318px;
+    background-image: url("../img/main-logo.png"), url("../img/main-geometric-group-medium.png");
+    background-size: 111px 112px, 194px 175px;
+    background-position: calc(50% + 180px) 61px, 50% 75px;
+    padding-top: 314px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
     margin-bottom: 44px;
+  }
+  @media (min-width: 768px) {
+    font-size: 15px;
+    letter-spacing: .08em;
+    background-position: calc(50% + 272px) 96px, calc(50% + 67px) 112px;
+    background-size: auto auto, 194px 175px;
+    margin-bottom: 39px;
   }
 }
 
@@ -31,6 +38,9 @@
     max-width: 540px;
     box-sizing: border-box;
     padding-left: 146px;
+  }
+  @media (min-width: 768px) {
+    padding-left: 338px;
   }
 }
 
@@ -43,7 +53,7 @@
   max-width: 230px;
 
   @media (min-width: 500px) {
-    max-width: fit-content;
+    max-width: 390px;
     margin-bottom: 16px;
   }
 }
@@ -53,5 +63,11 @@
 
   @media (min-width: 500px) {
     margin-bottom: 25px;
+    line-height: 17px;
+    max-width: 355px;
+    padding-left: 2px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
   }
 }
