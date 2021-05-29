@@ -243,7 +243,7 @@ a {
     .main-nav__social {
       top: 470px;
       left: calc(50% + 238px); } }
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     .main-nav__social {
       top: 442px;
       left: calc(50% + 360px);
