@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Светодиодные решения от ledwit",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-lintspaces": "^1.0.1"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
@@ -19,6 +21,7 @@
     "gulp-csscomb": "latest",
     "gulp-csso": "latest",
     "gulp-data": "latest",
+    "gulp-html-bem-validator": "^1.0.5",
     "gulp-imagemin": "latest",
     "gulp-merge-json": "latest",
     "gulp-notify": "latest",
@@ -26,14 +29,16 @@
     "gulp-plumber": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
+    "gulp-stylelint": "^13.0.0",
     "gulp-svgmin": "latest",
     "gulp-svgstore": "latest",
     "gulp-uglify": "latest",
+    "gulp-w3c-html-validator": "^3.0.0",
     "gulp-webp": "latest",
     "imagemin-mozjpeg": "latest",
     "imagemin-pngquant": "latest",
     "pixel-glass": "github:makehtml/pixel-glass",
-    "stylelint": "latest",
+    "stylelint": "^13.13.1",
     "stylelint-config-recess-order": "latest",
     "stylelint-config-standard": "latest",
     "stylelint-scss": "latest"

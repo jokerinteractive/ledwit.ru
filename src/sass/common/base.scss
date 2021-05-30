@@ -17,10 +17,16 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 
-  @media #{$media-sm} { min-width: $width-sm; }
-  @media #{$media-md} { min-width: $width-md; }
-  @media #{$media-lg} { min-width: $width-lg; }
-  @media #{$media-xl} { min-width: $width-xl; }
+  @media (min-width: 500px) {
+    font-size: $font-size-tablet;
+    background-image: url("../img/trymainimage.png");
+    background-size: 530px auto;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  }
+  @media (min-width: 768px) {
+    background-size: auto auto;
+  }
 }
 
 a {

@@ -7,15 +7,42 @@
   padding-left: 10px;
   box-sizing: border-box;
   text-align: center;
-  background-image: linear-gradient(transparent 180px, $color-bg 180px), url("../img/try.jpg");
+  background-image: url("../img/main-geometric-group-small@2x.png"), linear-gradient(transparent 180px, $color-bg 180px), url("../img/try.jpg");
   background-repeat: no-repeat;
-  background-size: cover, contain;
+  background-size: 108px auto, cover, contain;
+  background-position: 51% 143px, 0 0, 0 0;
+
+  @media (min-width: 500px) {
+    background-image: url("../img/main-logo.png"), url("../img/main-geometric-group-medium.png");
+    background-size: 111px 112px, 194px 175px;
+    background-position: calc(50% + 180px) 61px, 50% 75px;
+    padding-top: 314px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    margin-bottom: 44px;
+  }
+  @media (min-width: 768px) {
+    font-size: 15px;
+    letter-spacing: .08em;
+    background-position: calc(50% + 272px) 96px, calc(50% + 67px) 112px;
+    background-size: auto auto, 194px 175px;
+    margin-bottom: 39px;
+  }
 }
 
 .about__wrapper {
   @include rubber-stopper;
-}
 
+  @media (min-width: 500px) {
+    max-width: 540px;
+    box-sizing: border-box;
+    padding-left: 146px;
+  }
+  @media (min-width: 768px) {
+    padding-left: 338px;
+  }
+}
 
 .about__title {
   @include title;
@@ -25,21 +52,22 @@
   margin-left: auto;
   max-width: 230px;
 
-  &::before {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 148px;
-    height: 148px;
-    content: "";
-    background-image: url("../img/main-geometric-group-small.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-geometric-group-small@2x.png");
-      background-size: 148px auto;
-    }
+  @media (min-width: 500px) {
+    max-width: 390px;
+    margin-bottom: 16px;
   }
 }
 
-.about__description { margin-bottom: 22px; }
+.about__description {
+  margin-bottom: 22px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 25px;
+    line-height: 17px;
+    max-width: 355px;
+    padding-left: 2px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}

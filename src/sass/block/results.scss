@@ -1,13 +1,18 @@
 .results {
   @include container;
 
-  background-image: linear-gradient(transparent 77px, $color-bg 77px), url("../img/tryforhoneycomb.png");
+  background-image: linear-gradient(transparent 88px, $color-bg 88px), url("../img/tryforhoneycomb.png");
   background-repeat: no-repeat;
   font-size: 10px;
   text-align: center;
   padding-top: 13px;
   padding-bottom: 17px;
-  background-size: cover, contain;
+  background-size: auto auto, 150%, cover;
+
+  @media (min-width: 500px) {
+    padding-top: 30px;
+    font-size: 14px;
+  }
 }
 
 .results__wrapper {
@@ -20,13 +25,26 @@
   margin-bottom: 7px;
 }
 
-.results__text { margin-bottom: 28px; }
+.results__text {
+  margin-bottom: 28px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 67px;
+  }
+}
 
 .results__gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+  gap: 10px;
+
+  @media (min-width: 500px) {
+    padding-bottom: 23px;
+  }
 }
 
-.results__gallery-image { padding-bottom: 10px; }
+.results__gallery-image {
+  width: 30%;
+}

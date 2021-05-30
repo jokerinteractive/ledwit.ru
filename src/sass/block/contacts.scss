@@ -2,7 +2,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .contacts__title {
@@ -12,6 +12,11 @@
   width: 246px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 500px) {
+    max-width: 420px;
+    width: auto;
+  }
 }
 
 .contacts__summary {
@@ -32,6 +37,10 @@
 .contacts__text-wrapper {
   margin: 0 auto;
   max-width: 380px;
+
+  @media (min-width: 500px) {
+    max-width: 540px;
+  }
 }
 
 
@@ -61,6 +70,10 @@
     padding-left: 10px;
     margin: 0 auto;
     max-width: 370px;
+
+    @media (min-width: 500px) {
+      max-width: 530px;
+    }
   }
 }
 

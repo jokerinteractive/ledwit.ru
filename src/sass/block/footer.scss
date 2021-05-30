@@ -4,13 +4,18 @@
   min-width: 320px;
   max-width: 360px;
   display: flex;
-  padding-top: 7px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+
+  @media (min-width: 500px) {
+    min-width: 420px;
+    max-width: 540px;
+  }
 }
 
 .footer__logo {
   margin-right: 17px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-left: 9px;
 }
 
@@ -20,14 +25,28 @@
 
 .footer__our-contacts-wrapper {
   width: 70%;
+
+  @media (min-width: 500px) {
+    width: 100%;
+    display: flex;
+    letter-spacing: normal;
+  }
 }
+
 
 .footer__our-contacts {
   font-size: 7px;
+  font-family: Oswald, arial, sans-serif;
+  line-height: 10px;
 
   &--offline {
     font-size: 8px;
     padding-left: 11px;
+  }
+
+  @media (min-width: 500px) {
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 
@@ -35,8 +54,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 86%;
-  margin-bottom: 3px;
+
+  @media (min-width: 500px) {
+    gap: 15px;
+  }
 }
 
 .footer__our-contact {

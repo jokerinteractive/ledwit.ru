@@ -1,6 +1,7 @@
 //Шрифты
 $font-family: -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Open Sans", arial, sans-serif;
 $font-size: 12px;
+$font-size-tablet: 14px;
 $line-height: 1.2;
 $letter-spacing: .11em;
 
@@ -29,3 +30,4 @@ $media-xl: screen and (min-width: $width-xl);
 //Отступы
 $gap: 140px;
 $gapSm: 10px;
+$gapM: 20px;
