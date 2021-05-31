@@ -27,6 +27,14 @@
   @media (min-width: 500px) {
     padding-top: 45px;
   }
+  @media (min-width: 768px) {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trybackground@2x.png");
+    }
+  }
 }
 
 .services__wrapper-rubber {
@@ -51,6 +59,9 @@
     margin-right: auto;
     margin-bottom: 35px;
   }
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+  }
 }
 
 .services__list {
@@ -72,6 +83,12 @@
     display: flex;
     padding: 0 0 45px;
   }
+  @media (min-width: 768px) {
+    font-size: 13px;
+    letter-spacing: .06em;
+    max-width: 570px;
+    margin: 0 auto;
+  }
 }
 
 .services__item {
@@ -86,6 +103,9 @@
     background-size: 83px 83px;
     background-position: -9px -5px;
     padding-top: 70px;
+  }
+  @media (min-width: 768px) {
+    min-width: 78px;
   }
 
   &--decision {
@@ -131,6 +151,11 @@
   @media (min-width: 500px) {
     padding-top: 29px;
   }
+  @media (min-width: 768px) {
+    background-image: url("../img/geometric-group-medium.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 225px);
+  }
 }
 
 .services__guarantee-wrapper {
@@ -143,43 +168,55 @@
   font-size: 11px;
   text-align: left;
   background-image: url("../img/geometric-group-small@2x.png");
-  background-position: 12px 34px;
+  background-position: 12px 66px;
   background-repeat: no-repeat;
-  background-position-x: 29%;
   background-size: 277px 262px;
+  letter-spacing: .08em;
 
   @media (min-width: 500px) {
     min-width: 420px;
     max-width: 520px;
     font-size: 14px;
-    background-position: 12px -17px;
+    background-position: 12px 11px;
     background-position-x: 1%;
     background-size: 210px 195px;
+  }
+  @media (min-width: 768px) {
+    min-width: 728px;
+    max-width: 800px;
+    background-image: none;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .services__guarantee-title {
-  min-width: 300px;
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  letter-spacing: .06em;
+  letter-spacing: .07em;
   margin-bottom: 16px;
+  font-size: 14px;
 
   @media (min-width: 500px) {
-    min-width: 390px;
+    max-width: 390px;
     font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 768px) {
+    font-size: 19px;
+    margin-left: 44%;
+    letter-spacing: normal;
   }
 }
 
 .services__guarantee-text {
   margin-left: 10px;
-  letter-spacing: .1em;
+  letter-spacing: .11em;
 
   @media (min-width: 500px) {
     margin-left: 44%;
+  }
+  @media (min-width: 500px) {
+    font-size: 15px;
   }
 
   &--first {
@@ -205,6 +242,10 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 25px;
+  }
+  @media (min-width: 768px) {
+    margin-left: 43%;
+    margin-top: 0;
   }
 }
 
@@ -236,6 +277,10 @@
     padding-top: 70px;
     background-size: 83px 41px;
     background-position: 50% 30%;
+  }
+  @media (min-width: 768px) {
+    padding-top: 49px;
+    background-position-y: 0;
   }
 }
 

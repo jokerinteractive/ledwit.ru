@@ -6,6 +6,13 @@
   justify-content: space-between;
   color: $color-middle-grey;
   padding-bottom: 15px;
+
+  @media (min-width: 768px) {
+    max-width: 465px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #6b6b6b;
+  }
 }
 
 .form__legend {
@@ -17,6 +24,13 @@
   width: 90%;
   margin-left: 9px;
   margin-right: auto;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    margin: 0 0 16px;
+    width: 100%;
+    color: #fff;
+  }
 }
 
 .form__input {
@@ -25,6 +39,12 @@
   border-radius: 5px;
   background: #bbd6ff;
   border: 1px solid #0b77f7;
+
+  @media (min-width: 768px) {
+    width: 203px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
 }
 
 .form__textarea {
@@ -35,6 +55,10 @@
   border-radius: 5px;
   background: #bbd6ff;
   border: 1px solid #0b77f7;
+
+  @media (min-width: 768px) {
+    height: 112px;
+  }
 }
 
 .form__field {
@@ -43,6 +67,11 @@
 
   @media (min-width: 500px) {
     font-size: 12px;
+  }
+  @media (min-width: 768px) {
+    font-size: 13px;
+    gap: 2px;
+    padding-bottom: 6px;
   }
 }
 
@@ -55,4 +84,10 @@
   font-size: 10px;
   color: $color-light-grey;
   margin-bottom: 13px;
+
+  @media (min-width: 768px) {
+    margin-top: 3px;
+    letter-spacing: .07em;
+    margin-bottom: 25px;
+  }
 }
