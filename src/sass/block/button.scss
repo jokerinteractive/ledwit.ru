@@ -17,6 +17,10 @@
     margin-right: auto;
     padding: 3px 22px;
     border: none;
+
+    @media (min-width: 768px) {
+      padding: 6px 43px;
+    }
   }
 
   &--introduction {
@@ -29,5 +33,3 @@
     }
   }
 }
-
-
