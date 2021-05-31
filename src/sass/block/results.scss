@@ -13,6 +13,9 @@
     padding-top: 30px;
     font-size: 14px;
   }
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
 }
 
 .results__wrapper {
@@ -23,6 +26,10 @@
   @include title;
 
   margin-bottom: 7px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 10px;
+  }
 }
 
 .results__text {
@@ -30,6 +37,10 @@
 
   @media (min-width: 500px) {
     margin-bottom: 67px;
+  }
+  @media (min-width: 768px) {
+    max-width: 520px;
+    margin: 0 auto;
   }
 }
 
@@ -48,3 +59,11 @@
 .results__gallery-image {
   width: 30%;
 }
+
+
+.results__description {
+  @media (min-width: 768px) {
+    padding-bottom: 66px;
+  }
+}
+
