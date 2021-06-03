@@ -23,9 +23,18 @@ body {
     background-size: 530px auto;
     background-repeat: no-repeat;
     background-position-x: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trymainimage@2x.png");
+    }
   }
   @media (min-width: 768px) {
     background-size: auto auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trymainimage@2x.png");
+      background-size: 768px 693px;
+    }
   }
 }
 
