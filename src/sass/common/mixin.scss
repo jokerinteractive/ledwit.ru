@@ -5,7 +5,6 @@
   padding-left: $gapSm;
   box-sizing: border-box;
 
-  @media #{$media-lg} { max-width: $width-xl; }
   @media (min-width: 768px) {
     padding-right: $gapM;
     padding-left: $gapM;
