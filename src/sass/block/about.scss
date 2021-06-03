@@ -28,6 +28,11 @@
     background-position: calc(50% + 272px) 96px, calc(50% + 67px) 112px;
     background-size: auto auto, 194px 175px;
     margin-bottom: 39px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-logo@2x.png"), url("../img/main-geometric-group-medium@2x.png");
+      background-size: 131px 132px, 194px 175px;
+    }
   }
 }
 
