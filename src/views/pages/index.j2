@@ -4,27 +4,33 @@
 {% set result_gallery = [{
   src: './images/gallery-1-small@2x.jpg',
   alt: 'Изображение готового проекта по освещению ступенек',
-  srcset768: './images/gallery-1-medium.jpg'
+  srcset768: './images/gallery-1-medium.jpg',
+  srcset768@2x: './images/gallery-1-medium@2x.jpg'
 }, {
   src: './images/gallery-2-small@2x.jpg',
   alt: 'Изображение готового проекта по треугольному освещению потолка в торговом центре',
-  srcset768: './images/gallery-2-medium.jpg'
+  srcset768: './images/gallery-2-medium.jpg',
+  srcset768@2x: './images/gallery-2-medium@2x.jpg'
 }, {
   src: './images/gallery-3-small@2x.jpg',
   alt: 'Изображение готового проекта по освещению ламп, похожих на ветки на потолке в торговом центре',
-  srcset768: './images/gallery-3-medium.jpg'
+  srcset768: './images/gallery-3-medium.jpg',
+  srcset768@2x: './images/gallery-3-medium@2x.jpg'
 }, {
   src: './images/gallery-4-small@2x.jpg',
   alt: 'Изображение готового проекта по освещению автосалона лампами, выполненными в геометрической сетке',
-  srcset768: './images/gallery-4-medium.jpg'
+  srcset768: './images/gallery-4-medium.jpg',
+  srcset768@2x: './images/gallery-4-medium@2x.jpg'
 }, {
   src: './images/gallery-5-small@2x.jpg',
   alt: 'Изображение готового проекта по освещению потолка торгового центра, выполненными в волнообразной форме лампами',
-  srcset768: './images/gallery-5-medium.jpg'
+  srcset768: './images/gallery-5-medium.jpg',
+  srcset768@2x: './images/gallery-5-medium@2x.jpg'
 }, {
   src: './images/gallery-6-small@2x.jpg',
   alt: 'Изображение готового проекта по освещению эскалаторной зоны торгового центра',
-  srcset768: './images/gallery-6-medium.jpg'
+  srcset768: './images/gallery-6-medium.jpg',
+  srcset768@2x: './images/gallery-6-medium@2x.jpg'
 }] %}
 
 {% block content %}
@@ -57,10 +63,13 @@
       </div>
       <div class="results__gallery">
         {% for image in result_gallery %}
-          <img class="results__gallery-image" width="90" heihgt="90" src="{{ image.src }}" alt="{{ image.alt }}">
+          <picture>
+            <source media="(min-width: 768px)" srcset="{{ image.srcset768 }} 1x, {{ image.srcset768@2x }} 2x">
+            <img class="results__gallery-image" src="{{ image.src }}" alt="{{ image.alt }}">
+          </picture>
         {% endfor %}
       </div>
-      <a class="button" href="#">Больше работ</a>
+      <a class="button button--gallery" href="#">Больше работ</a>
     </div>
   </section>
 
@@ -91,7 +100,7 @@
           <li class="services__guarantee-list-item services__guarantee-list-item--complexity">Работа любой сложности</li>
         </ul>
       </div>
-      <a class="button" href="#">Оставить заявку</a>
+      <a class="button button--services" href="#">Оставить заявку</a>
     </div>
   </section>
 
