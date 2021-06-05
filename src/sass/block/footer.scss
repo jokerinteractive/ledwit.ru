@@ -17,6 +17,10 @@
     padding-top: 7px;
     padding-bottom: 0;
   }
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+    max-width: 1550px;
+  }
 }
 
 .footer__logo {
