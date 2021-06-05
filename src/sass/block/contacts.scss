@@ -50,6 +50,10 @@
     padding-top: 40px;
     margin-bottom: 2px;
   }
+  @media (min-width: 1440px) {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
 }
 
 .contacts__summary-wrapper {
@@ -57,6 +61,9 @@
     max-width: 820px;
     margin: 0 auto;
     font-size: 15px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1440px;
   }
 }
 
