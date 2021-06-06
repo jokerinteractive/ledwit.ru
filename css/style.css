@@ -768,7 +768,7 @@ a {
       padding-bottom: 23px; } }
   @media (min-width: 768px) {
     .results__gallery {
-      gap: 23px;
+      gap: 29px;
       padding-bottom: 31px; } }
 
 .results__gallery-image {
@@ -780,7 +780,7 @@ a {
       height: auto; } }
   @media (min-width: 768px) {
     .results__gallery-image {
-      width: auto; } }
+      width: 29vw; } }
 
 @media (min-width: 768px) {
   .results__description {
