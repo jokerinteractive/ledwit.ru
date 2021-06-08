@@ -8,6 +8,9 @@
   @media (min-width: 500px) {
     padding-top: 31px;
   }
+  @media (min-width: 1440px) {
+    padding-top: 36px;
+  }
 }
 
 .header__wrapper {
@@ -26,6 +29,9 @@
   }
   @media (min-width: 1440px) {
     max-width: 1550px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1620px;
   }
 }
 
@@ -46,7 +52,8 @@
     background-position: 12px 0;
   }
   @media (min-width: 768px) {
-    width: 100px;
+    width: 118px;
+    font-size: inherit;
     padding-bottom: 5px;
     margin-bottom: 0;
     padding-left: 31px;
@@ -54,6 +61,11 @@
     background-size: 25px 16px;
     padding-top: 2px;
     margin-top: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 205px;
+    background-size: 29px 35px;
+    background-position: 2px 0;
   }
 }
 
@@ -72,5 +84,9 @@
   }
   @media (min-width: 768px) {
     padding-left: 0;
+  }
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    padding-top: 5px;
   }
 }
