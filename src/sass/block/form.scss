@@ -11,6 +11,15 @@
     max-width: 465px;
     color: #6b6b6b;
   }
+  @media (min-width: 1440px) {
+    margin-left: 18px;
+    max-width: 610px;
+    padding-bottom: 45px;
+  }
+  @media (min-width: 1920px) {
+    margin-left: 0;
+    max-width: 623px;
+  }
 }
 
 .form__legend {
@@ -29,6 +38,10 @@
     width: 100%;
     color: #fff;
   }
+  @media (min-width: 1440px) {
+    font-size: 64px;
+    padding: 0;
+  }
 }
 
 .form__input {
@@ -43,6 +56,11 @@
     padding-bottom: 5px;
     padding-top: 5px;
   }
+  @media (min-width: 1440px) {
+    width: 270px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
 }
 
 .form__textarea {
@@ -56,6 +74,9 @@
 
   @media (min-width: 768px) {
     height: 112px;
+  }
+  @media (min-width: 1440px) {
+    height: 152px;
   }
 }
 
@@ -73,11 +94,22 @@
     padding-left: 1px;
     padding-right: 2px;
   }
+  @media (min-width: 1440px) {
+    padding-left: 12px;
+    padding-bottom: 13px;
+    gap: 7px;
+  }
 }
 
 .form__field-textarea {
   width: 100%;
   margin-top: 2px;
+
+  @media (min-width: 1440px) {
+    padding-left: 12px;
+    font-size: 12px;
+    margin-top: 0;
+  }
 }
 
 .form__footnote {
@@ -89,5 +121,11 @@
     margin-top: 4px;
     letter-spacing: .07em;
     margin-bottom: 25px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 12px;
+    margin-top: 2px;
+    margin-right: 8px;
+    margin-bottom: 20px;
   }
 }
