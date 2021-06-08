@@ -36,6 +36,16 @@ body {
       background-size: 768px 693px;
     }
   }
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    background-image: url("../img/main-image-big.png");
+    background-size: 92%, contain;
+    background-position-x: 0;
+  }
+  @media (min-width: 1920px) {
+    background-image: url("../img/main-image-big@2x.png");
+    background-size: 73% 1017px;
+  }
 }
 
 a {
