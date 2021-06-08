@@ -11,10 +11,16 @@
     font-size: 14px;
     letter-spacing: .14em;
   }
+  @media (min-width: 1440px) {
+    font-size: 24px;
+  }
 
   &--gallery {
     @media (min-width: 768px) {
       padding: 5px 36px 4px;
+    }
+    @media (min-width: 1440px) {
+      padding: 11px 73px 9px;
     }
   }
 
@@ -27,6 +33,10 @@
     @media (min-width: 768px) {
       padding: 6px 43px;
     }
+    @media (min-width: 1440px) {
+      padding: 10px 96px 18px;
+      margin-left: 14px;
+    }
   }
 
   &--introduction {
@@ -37,12 +47,27 @@
       margin-left: 3px;
       padding-right: 29px;
     }
+    @media (min-width: 1440px) {
+      padding-top: 9px;
+      padding-bottom: 11px;
+      padding-left: 59px;
+      margin-left: 117px;
+      padding-right: 55px;
+    }
   }
 
   &--services {
     @media (min-width: 768px) {
       margin-left: 540px;
       padding: 3px 20px 4px 22px;
+    }
+    @media (min-width: 1440px) {
+      margin-left: 1040px;
+      padding: 3px 20px 4px 22px;
+    }
+    @media (min-width: 1920px) {
+      margin-left: 1190px;
+      padding: 9px 55px 10px 63px;
     }
   }
 }
