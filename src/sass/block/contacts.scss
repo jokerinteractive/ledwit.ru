@@ -3,6 +3,17 @@
   margin-left: auto;
   box-sizing: border-box;
   margin-bottom: 12px;
+
+  @media (min-width: 1440px) {
+    background-image: url("../img/mix-image-big.png");
+    background-repeat: no-repeat;
+    background-position-x: 102%;
+    background-size: 50%;
+    padding-right: 20px;
+    padding-left: 26px;
+    padding-top: 40px;
+    margin-bottom: 2px;
+  }
 }
 
 .contacts__title {
@@ -24,6 +35,15 @@
     max-width: 333px;
     line-height: 29px;
     margin-bottom: 21px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 43px;
+    line-height: 52px;
+    max-width: 760px;
+    margin-bottom: 39px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 685px;
   }
 }
 
@@ -52,7 +72,8 @@
   }
   @media (min-width: 1440px) {
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 2px;
+    background-image: none;
   }
 }
 
@@ -63,7 +84,13 @@
     font-size: 15px;
   }
   @media (min-width: 1440px) {
-    max-width: 1440px;
+    max-width: 1550px;
+    font-size: inherit;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1650px;
+    padding-left: 22px;
+    box-sizing: border-box;
   }
 }
 
@@ -77,6 +104,9 @@
   @media (min-width: 768px) {
     margin: 0;
     max-width: 333px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 620px;
   }
 }
 
@@ -101,11 +131,31 @@
         left: 4px;
         top: 82px;
       }
+      @media (min-width: 1440px) {
+        width: 56%;
+        top: 133px;
+        height: 6px;
+      }
     }
 
     @media (min-width: 768px) {
       margin-bottom: 73px;
     }
+    @media (min-width: 1440px) {
+      margin-bottom: 101px;
+    }
+    @media (min-width: 1920px) {
+      letter-spacing: .1em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 5px;
+    line-height: 17px;
+  }
+  @media (min-width: 1440px) {
+    line-height: inherit;
+    max-width: 620px;
   }
 
   &--first {
@@ -113,6 +163,9 @@
 
     @media (min-width: 768px) {
       margin-bottom: 14px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 8px;
     }
   }
 
@@ -129,11 +182,9 @@
       max-width: 328px;
       padding-bottom: 50px;
     }
-  }
-
-  @media (min-width: 768px) {
-    padding-left: 5px;
-    line-height: 17px;
+    @media (min-width: 1920px) {
+      max-width: 629px;
+    }
   }
 }
 
@@ -150,5 +201,16 @@
   }
   @media (min-width: 768px) {
     background-image: none;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1550px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  @media (min-width: 1920px) {
+    max-width: 1585px;
+    padding-left: 26px;
   }
 }
