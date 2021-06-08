@@ -19,6 +19,11 @@
     background-image: linear-gradient(transparent 130px, $color-bg 130px), url("../img/tryforhoneycomb@2x.png");
     background-size: auto auto, 100%, cover;
   }
+  @media (min-width: 1440px) {
+    padding-top: 99px;
+    font-size: inherit;
+    padding-bottom: 59px;
+  }
 }
 
 .results__wrapper {
@@ -33,6 +38,9 @@
   @media (min-width: 500px) {
     margin-bottom: 10px;
   }
+  @media (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
 }
 
 .results__text {
@@ -44,6 +52,9 @@
   @media (min-width: 768px) {
     max-width: 520px;
     margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    max-width: 810px;
   }
 }
 
@@ -61,6 +72,14 @@
     gap: 29px;
     padding-bottom: 31px;
   }
+  @media (min-width: 1440px) {
+    padding-bottom: 68px;
+  }
+  @media (min-width: 1920px) {
+    gap: 55px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
 }
 
 .results__gallery-image {
@@ -74,12 +93,20 @@
   @media (min-width: 768px) {
     width: 29vw;
   }
+  @media (min-width: 1440px) {
+    width: 25vw;
+  }
+  @media (min-width: 1920px) {
+    width: 467px;
+  }
 }
-
 
 .results__description {
   @media (min-width: 768px) {
     padding-bottom: 66px;
+  }
+  @media (min-width: 1440px) {
+    padding-bottom: 153px;
   }
 }
 
