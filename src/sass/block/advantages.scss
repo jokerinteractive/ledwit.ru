@@ -140,6 +140,10 @@
     @media (min-width: 768px) {
       background-position: 37px 22px;
     }
+    @media (min-width: 1440px) {
+      background-size: 97px 60px;
+      background-position: 105px 90px;
+    }
   }
 
   &--production {
@@ -153,6 +157,10 @@
     }
     @media (min-width: 768px) {
       background-position: 41px 16px;
+    }
+    @media (min-width: 1440px) {
+      background-size: 89px 89px;
+      background-position: 115px 73px;
     }
   }
 
@@ -168,6 +176,10 @@
     @media (min-width: 768px) {
       background-position: 37px 12px;
     }
+    @media (min-width: 1440px) {
+      background-size: 101px 101px;
+      background-position: 105px 62px;
+    }
   }
 
   &--projects {
@@ -182,6 +194,10 @@
     @media (min-width: 768px) {
       background-position: 40px 26px;
     }
+    @media (min-width: 1440px) {
+      background-size: 97px 30px;
+      background-position: 115px 103px;
+    }
   }
 
   &--engineering {
@@ -195,6 +211,10 @@
     }
     @media (min-width: 768px) {
       background-position: 42px 17px;
+    }
+    @media (min-width: 1440px) {
+      background-size: 77px 81px;
+      background-position: 117px 77px;
     }
   }
 }
