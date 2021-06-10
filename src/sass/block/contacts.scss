@@ -8,11 +8,14 @@
     background-image: url("../img/mix-image-big.png");
     background-repeat: no-repeat;
     background-position-x: 102%;
-    background-size: 50%;
+    background-size: 50% 120%;
     padding-right: 20px;
     padding-left: 26px;
-    padding-top: 40px;
+    padding-top: 44px;
     margin-bottom: 2px;
+  }
+  @media (min-width: 1920px) {
+    background-size: 54% 120%;
   }
 }
 
@@ -68,7 +71,7 @@
     padding-right: 20px;
     padding-left: 26px;
     padding-top: 40px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
   @media (min-width: 1440px) {
     padding-left: 30px;
@@ -142,7 +145,7 @@
       margin-bottom: 73px;
     }
     @media (min-width: 1440px) {
-      margin-bottom: 101px;
+      margin-bottom: 104px;
     }
     @media (min-width: 1920px) {
       letter-spacing: .1em;
@@ -165,7 +168,7 @@
       margin-bottom: 14px;
     }
     @media (min-width: 1440px) {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
   }
 
