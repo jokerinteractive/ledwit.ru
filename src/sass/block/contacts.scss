@@ -7,14 +7,15 @@
   @media (min-width: 1440px) {
     background-image: url("../img/mix-image-big.png");
     background-repeat: no-repeat;
-    background-position-x: 102%;
-    background-size: 50% 120%;
+    background-position-x: 175%;
+    background-size: 70% 120%;
     padding-right: 20px;
     padding-left: 26px;
     padding-top: 44px;
     margin-bottom: 2px;
   }
   @media (min-width: 1920px) {
+    background-position-x: 102%;
     background-size: 54% 120%;
   }
 }
@@ -42,7 +43,7 @@
   @media (min-width: 1440px) {
     font-size: 43px;
     line-height: 52px;
-    max-width: 760px;
+    max-width: 700px;
     margin-bottom: 39px;
   }
   @media (min-width: 1920px) {
@@ -155,10 +156,10 @@
   @media (min-width: 768px) {
     padding-left: 5px;
     line-height: 17px;
+    max-width: 620px;
   }
   @media (min-width: 1440px) {
     line-height: inherit;
-    max-width: 620px;
   }
 
   &--first {
@@ -184,6 +185,9 @@
       margin: 0;
       max-width: 328px;
       padding-bottom: 50px;
+    }
+    @media (min-width: 1440px) {
+      max-width: 620px;
     }
     @media (min-width: 1920px) {
       max-width: 629px;
