@@ -23,6 +23,10 @@
     padding-top: 99px;
     font-size: inherit;
     padding-bottom: 59px;
+    background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big.png");
+  }
+  @media (min-width: 1920px) {
+    background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big@2x.png");
   }
 }
 
@@ -92,9 +96,11 @@
   }
   @media (min-width: 768px) {
     width: 29vw;
+    max-width: 350px;
   }
   @media (min-width: 1440px) {
     width: 25vw;
+    max-width: initial;
   }
   @media (min-width: 1920px) {
     width: 467px;
