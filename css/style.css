@@ -679,7 +679,14 @@ a {
       background-size: contain; } }
   @media (min-width: 1440px) {
     .advantages {
-      margin-bottom: 70px; } }
+      margin-bottom: 70px;
+      background-image: url("../img/geometric-background-big.png");
+      background-size: auto;
+      background-position-y: -21px; } }
+  @media (min-width: 1920px) {
+    .advantages {
+      background-image: url("../img/geometric-background-big@2x.png");
+      background-size: contain; } }
 
 .advantages__wrapper {
   min-width: 300px;
@@ -735,7 +742,7 @@ a {
       margin: 0 auto; } }
   @media (min-width: 1440px) {
     .advantages__list {
-      font-size: 23px;
+      font-size: 20.5px;
       margin-left: 0;
       margin-right: 0;
       max-width: 100%; } }
@@ -743,7 +750,8 @@ a {
     .advantages__list {
       font-size: 24px;
       letter-spacing: .12em;
-      padding-left: 60px; } }
+      padding-left: 60px;
+      max-width: 100%; } }
 
 .advantages__item {
   margin-bottom: 8px;
@@ -911,7 +919,11 @@ a {
     .results {
       padding-top: 99px;
       font-size: inherit;
-      padding-bottom: 59px; } }
+      padding-bottom: 59px;
+      background-image: linear-gradient(transparent 322px, #000 322px), url("../img/tryforhoneycomb-big.png"); } }
+  @media (min-width: 1920px) {
+    .results {
+      background-image: linear-gradient(transparent 322px, #000 322px), url("../img/tryforhoneycomb-big@2x.png"); } }
 
 .results__wrapper {
   min-width: 300px;
@@ -995,10 +1007,12 @@ a {
       height: auto; } }
   @media (min-width: 768px) {
     .results__gallery-image {
-      width: 29vw; } }
+      width: 29vw;
+      max-width: 350px; } }
   @media (min-width: 1440px) {
     .results__gallery-image {
-      width: 25vw; } }
+      width: 25vw;
+      max-width: initial; } }
   @media (min-width: 1920px) {
     .results__gallery-image {
       width: 467px; } }
@@ -1056,7 +1070,11 @@ a {
       padding-right: 30px;
       padding-left: 30px;
       padding-top: 208px;
-      margin-bottom: 56px; } }
+      margin-bottom: 56px;
+      background-image: url("../img/trybackground-big.png"); } }
+  @media (min-width: 1920px) {
+    .services__wrapper {
+      background-image: url("../img/trybackground-big@2x.png"); } }
 
 .services__wrapper-rubber {
   min-width: 300px;
@@ -1117,17 +1135,14 @@ a {
       font-size: inherit;
       line-height: inherit;
       max-width: 1060px;
-      width: auto; } }
-  @media (min-width: 1920px) {
-    .services__description {
-      margin-bottom: 70px; } }
+      width: auto;
+      margin-bottom: 50px; } }
 
 .services__list {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
   display: grid;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 19px;
   margin: 0;
@@ -1140,6 +1155,7 @@ a {
       font-size: 12px;
       letter-spacing: normal;
       display: flex;
+      flex-wrap: wrap;
       padding: 0 0 45px; } }
   @media (min-width: 768px) {
     .services__list {
@@ -1154,6 +1170,7 @@ a {
       padding-bottom: 200px; } }
   @media (min-width: 1920px) {
     .services__list {
+      max-width: 84%;
       font-size: 25px;
       letter-spacing: .12em; } }
 
@@ -1176,10 +1193,14 @@ a {
       background-size: 87px 87px; } }
   @media (min-width: 1440px) {
     .services__item {
-      padding-top: 140px;
+      padding-top: 160px;
       min-width: 190px;
-      background-size: 145px 145px;
+      background-size: 194px 194px;
       background-position: 21px 0; } }
+  @media (min-width: 1920px) {
+    .services__item {
+      min-width: 210px;
+      background-position: 10px -30px; } }
   .services__item--decision {
     background-image: url("../img/icon-lamp-big.png"); }
   .services__item--design {
@@ -1213,6 +1234,9 @@ a {
     @media (min-width: 1440px) {
       .services__item--commissioning {
         background-position-x: 15px; } }
+    @media (min-width: 1920px) {
+      .services__item--commissioning {
+        background-position-x: 5px; } }
 
 .services__guarantee {
   text-align: center; }
@@ -1232,10 +1256,14 @@ a {
   @media (min-width: 1440px) {
     .services__guarantee {
       padding-top: 51px;
+      background-position: calc(50% - 435px) 0;
+      background-size: 500px auto;
       background-image: url("../img/geometric-group-big.png");
-      background-position: calc(50% - 513px) 0;
-      background-size: auto;
       padding-bottom: 12px; } }
+  @media (min-width: 1920px) {
+    .services__guarantee {
+      background-position: calc(50% - 513px) 0;
+      background-size: auto; } }
 
 .services__guarantee-wrapper {
   min-width: 300px;
@@ -1437,14 +1465,15 @@ a {
     .contacts {
       background-image: url("../img/mix-image-big.png");
       background-repeat: no-repeat;
-      background-position-x: 102%;
-      background-size: 50% 120%;
+      background-position-x: 175%;
+      background-size: 70% 120%;
       padding-right: 20px;
       padding-left: 26px;
       padding-top: 44px;
       margin-bottom: 2px; } }
   @media (min-width: 1920px) {
     .contacts {
+      background-position-x: 102%;
       background-size: 54% 120%; } }
 
 .contacts__title {
@@ -1477,7 +1506,7 @@ a {
     .contacts__title {
       font-size: 43px;
       line-height: 52px;
-      max-width: 760px;
+      max-width: 700px;
       margin-bottom: 39px; } }
   @media (min-width: 1920px) {
     .contacts__title {
@@ -1578,12 +1607,12 @@ a {
 @media (min-width: 768px) {
   .contacts__text {
     padding-left: 5px;
-    line-height: 17px; } }
+    line-height: 17px;
+    max-width: 620px; } }
 
 @media (min-width: 1440px) {
   .contacts__text {
-    line-height: inherit;
-    max-width: 620px; } }
+    line-height: inherit; } }
 
 .contacts__text--first {
   margin-bottom: 18px; }
@@ -1606,6 +1635,9 @@ a {
       margin: 0;
       max-width: 328px;
       padding-bottom: 50px; } }
+  @media (min-width: 1440px) {
+    .contacts__text--last {
+      max-width: 620px; } }
   @media (min-width: 1920px) {
     .contacts__text--last {
       max-width: 629px; } }
@@ -1790,11 +1822,13 @@ a {
       font-size: 18px;
       line-height: 27px;
       padding-top: 10px;
-      padding-bottom: 37px; } }
+      padding-bottom: 22px; } }
   @media (min-width: 1920px) {
     .footer {
-      width: 1640px;
-      max-width: initial; } }
+      width: 1635px;
+      max-width: initial;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .footer__logo {
   margin-right: 17px;
@@ -1805,6 +1839,16 @@ a {
       margin-right: 75px;
       margin-left: 14px;
       padding: 0; } }
+  @media (min-width: 1920px) {
+    .footer__logo {
+      margin-left: 0;
+      margin-right: 84px;
+      padding-top: 9px; } }
+
+@media (min-width: 1440px) {
+  .footer__logo-image {
+    width: 115px;
+    height: 115px; } }
 
 .footer-navigation {
   display: none; }
@@ -1813,17 +1857,21 @@ a {
       display: block; } }
 
 .footer__navigation-list {
+  display: none;
   list-style-type: none;
   margin: 0;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: inherit;
-  padding-top: 38px; }
+  padding-left: 0; }
+  @media (min-width: 1440px) {
+    .footer__navigation-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 17px;
+      letter-spacing: .09em;
+      padding-top: 38px; } }
 
 .footer__navigation-item {
-  width: 119px; }
+  width: 102px; }
 
 .footer__our-contacts-wrapper {
   width: 70%; }
@@ -1837,7 +1885,7 @@ a {
       justify-content: space-between; } }
   @media (min-width: 1440px) {
     .footer__our-contacts-wrapper {
-      padding-top: 23px; } }
+      padding-top: 32px; } }
 
 .footer__our-contacts {
   font-size: 7px;
@@ -1861,6 +1909,9 @@ a {
       .footer__our-contacts--offline {
         font-size: inherit;
         line-height: inherit; } }
+    @media (min-width: 1440px) {
+      .footer__our-contacts--offline {
+        min-width: 307px; } }
 
 .footer__our-contacts-online {
   display: flex;
@@ -1873,6 +1924,13 @@ a {
     .footer__our-contacts-online {
       gap: 44px;
       padding-top: 3px; } }
+  @media (min-width: 1440px) {
+    .footer__our-contacts-online {
+      padding-left: 65px; } }
+  @media (min-width: 1920px) {
+    .footer__our-contacts-online {
+      gap: 100px;
+      padding-left: 92px; } }
 
 .footer__our-contact {
   margin-bottom: 3px; }
