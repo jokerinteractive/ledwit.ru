@@ -722,6 +722,9 @@ a {
       font-size: 64px; } }
   @media (min-width: 500px) {
     .advantages__title {
+      margin-bottom: 32px; } }
+  @media (min-width: 1440px) {
+    .advantages__title {
       margin-bottom: 50px; } }
 
 .advantages__list {
@@ -972,7 +975,7 @@ a {
     .results__text {
       max-width: 520px;
       margin: 0 auto; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     .results__text {
       max-width: 810px; } }
 
@@ -1434,7 +1437,7 @@ a {
       padding-top: 49px;
       background-position-y: 0;
       min-width: 129px;
-      font-size: inherit; } }
+      font-size: 12px; } }
   @media (min-width: 1440px) {
     .services__guarantee-list-item {
       min-width: 245px;
