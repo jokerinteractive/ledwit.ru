@@ -9,23 +9,23 @@
   padding-bottom: 17px;
   background-size: auto auto, 150%, cover;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     padding-top: 30px;
     font-size: 14px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     padding-top: 30px;
     padding-bottom: 30px;
     background-image: linear-gradient(transparent 130px, $color-bg 130px), url("../img/tryforhoneycomb@2x.png");
     background-size: auto auto, 100%, cover;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     padding-top: 99px;
     font-size: inherit;
     padding-bottom: 59px;
     background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big.png");
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big@2x.png");
   }
 }
@@ -39,10 +39,10 @@
 
   margin-bottom: 7px;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     margin-bottom: 10px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     margin-bottom: 20px;
   }
 }
@@ -50,14 +50,14 @@
 .results__text {
   margin-bottom: 28px;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     margin-bottom: 67px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     max-width: 520px;
     margin: 0 auto;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     max-width: 810px;
   }
 }
@@ -69,17 +69,17 @@
   padding-bottom: 15px;
   gap: 10px;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     padding-bottom: 23px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     gap: 29px;
     padding-bottom: 31px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     padding-bottom: 68px;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     gap: 55px;
     padding-left: 56px;
     padding-right: 56px;
@@ -90,28 +90,28 @@
   width: 93px;
   height: 89px;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     width: 145px;
     height: auto;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     width: 29vw;
     max-width: 350px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     width: 25vw;
     max-width: initial;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     width: 467px;
   }
 }
 
 .results__description {
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     padding-bottom: 66px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     padding-bottom: 153px;
   }
 }

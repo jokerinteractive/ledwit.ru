@@ -8,17 +8,17 @@
   padding-bottom: 6px;
   font-family: Oswald, arial, sans-serif;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     min-width: 420px;
     max-width: 540px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     min-width: 768px;
     max-width: 820px;
     padding-top: 7px;
     padding-bottom: 0;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     min-width: 1440px;
     max-width: 1550px;
     font-size: 18px;
@@ -26,7 +26,7 @@
     padding-top: 10px;
     padding-bottom: 22px;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     width: 1635px;
     max-width: initial;
     padding-left: 20px;
@@ -39,12 +39,12 @@
   padding-top: 7px;
   padding-left: 9px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     margin-right: 75px;
     margin-left: 14px;
     padding: 0;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     margin-left: 0;
     margin-right: 84px;
     padding-top: 9px;
@@ -52,7 +52,7 @@
 }
 
 .footer__logo-image {
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     width: 115px;
     height: 115px;
   }
@@ -61,7 +61,7 @@
 .footer-navigation {
   display: none;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     display: block;
   }
 }
@@ -71,7 +71,7 @@
 
   @include lists-base;
 
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,15 +88,15 @@
 .footer__our-contacts-wrapper {
   width: 70%;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     width: 100%;
     display: flex;
     letter-spacing: normal;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     justify-content: space-between;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     padding-top: 32px;
   }
 }
@@ -105,11 +105,11 @@
   font-size: 7px;
   line-height: 10px;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     font-size: 11px;
     line-height: 16px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     font-size: inherit;
     line-height: inherit;
   }
@@ -118,15 +118,13 @@
     font-size: 8px;
     padding-left: 11px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       font-size: 13px;
       padding-top: 5px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: $width-lg) {
       font-size: inherit;
       line-height: inherit;
-    }
-    @media (min-width: 1440px) {
       min-width: 307px;
     }
   }
@@ -137,17 +135,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     gap: 15px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     gap: 44px;
     padding-top: 3px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $width-lg) {
     padding-left: 65px;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: $width-xl) {
     gap: 100px;
     padding-left: 92px;
   }
@@ -156,7 +154,7 @@
 .footer__our-contact {
   margin-bottom: 3px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     margin-bottom: 0;
   }
 }
@@ -164,7 +162,7 @@
 .footer__our-contacts-phone {
   padding-left: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     padding-left: 0;
   }
 }
