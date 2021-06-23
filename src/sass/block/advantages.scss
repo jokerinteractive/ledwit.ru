@@ -6,12 +6,28 @@
   background: url("../img/geometric-background-small@2x.png") no-repeat 50% -2px;
   background-size: contain;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     padding-top: 61px;
     margin-bottom: 25px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     margin-bottom: 18px;
+    background: url("../img/geometric-background-medium.png") repeat 50% -2px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/geometric-background-medium@2x.png");
+      background-size: contain;
+    }
+  }
+  @media (min-width: $width-lg) {
+    margin-bottom: 70px;
+    background-image: url("../img/geometric-background-big.png");
+    background-size: auto;
+    background-position-y: -21px;
+  }
+  @media (min-width: $width-xl) {
+    background-image: url("../img/geometric-background-big@2x.png");
+    background-size: contain;
   }
 }
 
@@ -25,8 +41,11 @@
   margin-bottom: 11px;
   text-align: center;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     margin-bottom: 35px;
+  }
+  @media (min-width: $width-lg) {
+    margin-bottom: 50px;
   }
 }
 
@@ -39,12 +58,24 @@
   font-size: 10px;
   text-align: center;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     font-size: 12px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     max-width: 653px;
     margin: 0 auto;
+  }
+  @media (min-width: $width-lg) {
+    font-size: 20.5px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  @media (min-width: $width-xl) {
+    font-size: 24px;
+    letter-spacing: .12em;
+    padding-left: 60px;
+    max-width: 100%;
   }
 }
 
@@ -57,17 +88,23 @@
   letter-spacing: .1px;
   background-repeat: no-repeat;
 
-  @media (min-width: 500px) {
+  @media (min-width: $width-s) {
     width: 20%;
     padding-top: 55px;
     letter-spacing: normal;
     font-size: 11px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $width-md) {
     width: 19%;
     letter-spacing: .11em;
     font-size: 13px;
     padding-top: 83px;
+  }
+  @media (min-width: $width-lg) {
+    width: 20%;
+    font-size: inherit;
+    line-height: inherit;
+    padding-top: 241px;
   }
 
   &::before {
@@ -82,16 +119,23 @@
     content: "";
     z-index: -1;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       width: 90px;
       height: 90px;
       background-size: 85px 85px;
       top: -20px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-size: 92px 94px;
       top: -12px;
       left: 57px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 232px 236px;
+      width: 232px;
+      height: 192px;
+      top: 21px;
+      left: 157px;
     }
   }
 
@@ -100,12 +144,16 @@
     background-size: 23px 15px;
     background-position: 50% 10px;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       background-size: 38px 23px;
       background-position-y: 15px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-position: 37px 22px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 97px 60px;
+      background-position: 105px 90px;
     }
   }
 
@@ -114,12 +162,16 @@
     background-size: 19px 20px;
     background-position: 50% 7px;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       background-size: 35px 35px;
       background-position-y: 6px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-position: 41px 16px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 89px 89px;
+      background-position: 115px 73px;
     }
   }
 
@@ -128,12 +180,16 @@
     background-size: 22px 22px;
     background-position: 50% 6px;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       background-size: 41px 40px;
       background-position-y: 4px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-position: 37px 12px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 101px 101px;
+      background-position: 105px 62px;
     }
   }
 
@@ -142,12 +198,16 @@
     background-size: 29px 11px;
     background-position: 50% 12px;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       background-size: 38px 13px;
       background-position-y: 16px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-position: 40px 26px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 97px 30px;
+      background-position: 115px 103px;
     }
   }
 
@@ -156,12 +216,16 @@
     background-size: 21px 22px;
     background-position: 50% 7px;
 
-    @media (min-width: 500px) {
+    @media (min-width: $width-s) {
       background-size: 30px 32px;
       background-position-y: 9px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $width-md) {
       background-position: 42px 17px;
+    }
+    @media (min-width: $width-lg) {
+      background-size: 77px 81px;
+      background-position: 117px 77px;
     }
   }
 }

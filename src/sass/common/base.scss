@@ -23,9 +23,28 @@ body {
     background-size: 530px auto;
     background-repeat: no-repeat;
     background-position-x: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trymainimage@2x.png");
+    }
   }
   @media (min-width: 768px) {
     background-size: auto auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trymainimage@2x.png");
+      background-size: 768px 693px;
+    }
+  }
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    background-image: url("../img/main-image-big.png");
+    background-size: 92%, contain;
+    background-position-x: 0;
+  }
+  @media (min-width: 1920px) {
+    background-image: url("../img/main-image-big@2x.png");
+    background-size: 73% 1017px;
   }
 }
 
