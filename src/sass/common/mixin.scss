@@ -1,17 +1,44 @@
+@function min-width($width-name) {
+  $width: map-get($widths, $width-name);
+
+  @return "(min-width: #{$width})";
+}
+@function max-width($width-name) {
+  $width: map-get($widths, $width-name);
+
+  @return "(max-width: #{$width - 1})";
+}
+
+@mixin media-min($min-breakpoint-name) {
+  @media #{min-width($min-breakpoint-name)} {
+    @content;
+  }
+}
+@mixin media-max($max-breakpoint-name) {
+  @media #{max-width($max-breakpoint-name)} {
+    @content;
+  }
+}
 @mixin container {
   margin-right: auto;
   margin-left: auto;
   padding-right: $gapSm;
   padding-left: $gapSm;
-  box-sizing: border-box;
+  width: map-get($widths, sm);
 
-  @media (min-width: 768px) {
-    padding-right: $gapM;
-    padding-left: $gapM;
+  @include media-min(md) {
+    width: 90%;
+    min-width: map-get($widths, md);
+    padding-left: $gapMd;
+    padding-right: $gapMd;
   }
-  @media (min-width: 1440px) {
-    padding-right: 30px;
-    padding-left: 30px;
+  @include media-min(lg) {
+    min-width: map-get($widths, lg);
+    padding-left: $gapLg;
+    padding-right: $gapLg;
+  }
+  @include media-min(xl) {
+    width: map-get($widths, xl);
   }
 }
 @mixin title {
@@ -19,12 +46,8 @@
   font-size: 14px;
   letter-spacing: .1px;
 
-  @media (min-width: 500px) {
-    font-size: 24px;
-  }
-  @media (min-width: 1440px) {
-    font-size: 64px;
-  }
+  @include media-min(sm) { font-size: 24px; }
+  @include media-min(lg) { font-size: 64px; }
 }
 @mixin lists-base {
   list-style-type: none;
@@ -37,18 +60,18 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 500px) {
+  @include media-min(sm) {
     min-width: 420px;
     max-width: 540px;
   }
-  @media (min-width: 768px) {
+  @include media-min(md) {
     min-width: 728px;
     max-width: 820px;
   }
-  @media (min-width: 768px) {
+  @include media-min(lg) {
     max-width: 1550px;
   }
-  @media (min-width: 1920px) {
+  @include media-min(xl) {
     max-width: 1650px;
   }
 }

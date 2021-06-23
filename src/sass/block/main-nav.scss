@@ -3,13 +3,13 @@
   position: relative;
   order: 2;
 
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     order: 0;
   }
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     width: 60%;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     width: 63%;
   }
 }
@@ -19,57 +19,57 @@
   top: 90px;
   left: calc(50% - 111px);
 
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     top: 470px;
     left: calc(50% + 238px);
   }
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     top: 442px;
     left: calc(50% + 369px);
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     top: 822px;
     left: calc(50% + 615px);
     gap: 4px;
   }
-  @media (min-width: $width-xl) {
+  @include media-min(xl) {
     left: calc(50% + 811px);
   }
 }
 
 .main-nav__social-item {
   &--fb {
-    @media (min-width: $width-md) {
+    @include media-min(md) {
       width: 32px;
       height: 17px;
     }
-    @media (min-width: $width-lg) {
+    @include media-min(lg) {
       width: 37px;
       height: 22px;
     }
   }
 
   &--ig {
-    @media (min-width: $width-md) {
+    @include media-min(md) {
       width: 32px;
       height: 17px;
     }
-    @media (min-width: $width-lg) {
+    @include media-min(lg) {
       width: 39px;
       height: 23px;
     }
   }
 
   &--pinterest {
-    @media (min-width: $width-md) {
+    @include media-min(md) {
       width: 20px;
       height: 19px;
       padding-left: 6px;
     }
-    @media (min-width: $width-lg) {
+    @include media-min(lg) {
       width: 23px;
       height: 24px;
       padding-left: 8px;
@@ -77,12 +77,12 @@
   }
 
   &--twitter {
-    @media (min-width: $width-md) {
+    @include media-min(md) {
       width: 20px;
       height: 19px;
       padding-left: 6px;
     }
-    @media (min-width: $width-lg) {
+    @include media-min(lg) {
       width: 23px;
       height: 24px;
       padding-left: 8px;
@@ -90,12 +90,12 @@
   }
 
   &--youtube {
-    @media (min-width: $width-md) {
+    @include media-min(md) {
       width: 20px;
       height: 15px;
       padding-left: 6px;
     }
-    @media (min-width: $width-lg) {
+    @include media-min(lg) {
       width: 27px;
       height: 19px;
     }
@@ -118,13 +118,13 @@
     left: calc(50% - 120px);
     padding-left: 10px;
   }
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     display: flex;
     padding-left: 20px;
     letter-spacing: normal;
     background-color: rgba(0, 0, 0, .85);
   }
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     letter-spacing: .06em;
     padding-left: 9px;
   }
@@ -140,7 +140,7 @@
   margin-left: 5px;
   margin-right: 15px;
 
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     display: none;
   }
   @media (max-width: 499px) {
@@ -203,13 +203,13 @@
 }
 
 .main-nav__item {
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     padding-right: 10px;
   }
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     padding-right: 48px;
   }
-  @media (min-width: $width-xl) {
+  @include media-min(xl) {
     padding-right: 67px;
   }
 }

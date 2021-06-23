@@ -15,20 +15,16 @@ $color-hover: darken($color-primary, 15%);
 $color-active: lighten($color-primary, 15%);
 
 //Размеры
-$width-xs: 320px;
-$width-s: 500px;
-$width-sm: 767px;
-$width-md: 768px;
-$width-lg: 1440px;
-$width-xl: 1920px;
-
-//Медиа
-$media-sm: screen and (min-width: $width-sm);
-$media-md: screen and (min-width: $width-md);
-$media-lg: screen and (min-width: $width-lg);
-$media-xl: screen and (min-width: $width-xl);
+$widths: (
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px,
+);
 
 //Отступы
 $gap: 140px;
-$gapSm: 10px;
-$gapM: 20px;
+$gapSm: 20px;
+$gapMd: 32px;
+$gapLg: 40px;

@@ -7,17 +7,16 @@
 }
 
 body {
-  font: $font-size $font-family;
-  line-height: $line-height;
+  font: list.slash($font-size, $line-height) $font-family;
   color: $color-base;
   background-color: $color-bg;
   letter-spacing: $letter-spacing;
-  min-width: $width-xs;
+  min-width: map-get($widths, xs);
   margin: 0;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 
-  @media (min-width: 500px) {
+  @include media-min(sm) {
     font-size: $font-size-tablet;
     background-image: url("../img/trymainimage.png");
     background-size: 530px auto;
@@ -28,7 +27,7 @@ body {
       background-image: url("../img/trymainimage@2x.png");
     }
   }
-  @media (min-width: 768px) {
+  @include media-min(md) {
     background-size: auto auto;
 
     @media (min-resolution: 2dppx) {
@@ -36,13 +35,13 @@ body {
       background-size: 768px 693px;
     }
   }
-  @media (min-width: 1440px) {
+  @include media-min(lg) {
     font-size: 24px;
     background-image: url("../img/main-image-big.png");
     background-size: 92%, contain;
     background-position-x: 0;
   }
-  @media (min-width: 1920px) {
+  @include media-min(xl) {
     background-image: url("../img/main-image-big@2x.png");
     background-size: 73% 1017px;
   }

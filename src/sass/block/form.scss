@@ -7,16 +7,16 @@
   color: $color-middle-grey;
   padding-bottom: 15px;
 
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     max-width: 465px;
     color: #6b6b6b;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     margin-left: 18px;
     max-width: 610px;
     padding-bottom: 45px;
   }
-  @media (min-width: $width-xl) {
+  @include media-min(xl) {
     margin-left: 0;
     max-width: 623px;
   }
@@ -32,13 +32,13 @@
   margin-left: 9px;
   margin-right: auto;
 
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     font-size: 24px;
     margin: 0 0 16px;
     width: 100%;
     color: #fff;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     font-size: 64px;
     padding: 0;
   }
@@ -51,12 +51,12 @@
   background: #bbd6ff;
   border: 1px solid #0b77f7;
 
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     width: 205px;
     padding-bottom: 5px;
     padding-top: 5px;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     width: 270px;
     padding-bottom: 8px;
     padding-top: 8px;
@@ -72,10 +72,10 @@
   background: #bbd6ff;
   border: 1px solid #0b77f7;
 
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     height: 112px;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     height: 152px;
   }
 }
@@ -84,17 +84,17 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $width-s) {
+  @include media-min(sm) {
     font-size: 12px;
   }
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     font-size: 13px;
     gap: 2px;
     padding-bottom: 6px;
     padding-left: 1px;
     padding-right: 2px;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     padding-left: 12px;
     padding-bottom: 13px;
     gap: 7px;
@@ -105,7 +105,7 @@
   width: 100%;
   margin-top: 2px;
 
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     padding-left: 12px;
     font-size: 12px;
     margin-top: 0;
@@ -117,12 +117,12 @@
   color: $color-light-grey;
   margin-bottom: 13px;
 
-  @media (min-width: $width-md) {
+  @include media-min(md) {
     margin-top: 4px;
     letter-spacing: .07em;
     margin-bottom: 25px;
   }
-  @media (min-width: $width-lg) {
+  @include media-min(lg) {
     padding-left: 12px;
     margin-top: 2px;
     margin-right: 8px;
