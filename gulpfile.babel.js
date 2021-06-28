@@ -16,7 +16,7 @@ import plumber from 'gulp-plumber';
 import pngquant from 'imagemin-pngquant';
 import rename from 'gulp-rename';
 import render from 'gulp-nunjucks-render';
-import sass from 'gulp-sass';
+import sass from 'gulp-dart-sass';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import uglify from 'gulp-uglify';
