@@ -61,7 +61,6 @@
 
 .about__wrapper {
   @include rubber-stopper;
-
   @include media-min(sm) {
     max-width: 540px;
     box-sizing: border-box;
