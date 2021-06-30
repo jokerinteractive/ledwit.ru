@@ -62,6 +62,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   @include media-min(md) {
     background-image: url("../img/mix-image-medium@2x.png");
     background-repeat: no-repeat;
@@ -186,6 +187,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/mix-image-small@2x.png");
   }
+
   @include media-min(md) {
     background-image: none;
   }
