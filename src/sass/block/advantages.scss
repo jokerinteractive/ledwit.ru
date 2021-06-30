@@ -31,9 +31,7 @@
   }
 }
 
-.advantages__wrapper {
-  @include rubber-stopper;
-}
+.advantages__wrapper { @include rubber-stopper; }
 
 .advantages__title {
   @include title;
@@ -142,9 +140,7 @@
       background-size: 38px 23px;
       background-position-y: 15px;
     }
-    @include media-min(md) {
-      background-position: 37px 22px;
-    }
+    @include media-min(md) { background-position: 37px 22px; }
     @include media-min(lg) {
       background-size: 97px 60px;
       background-position: 105px 90px;

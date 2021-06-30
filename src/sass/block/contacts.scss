@@ -106,9 +106,7 @@
     margin: 0;
     max-width: 333px;
   }
-  @include media-min(lg) {
-    max-width: 620px;
-  }
+  @include media-min(lg) { max-width: 620px; }
 }
 
 .contacts__text {
@@ -155,9 +153,7 @@
     margin-bottom: 18px;
 
     @include media-min(md) { margin-bottom: 14px; }
-    @include media-min(lg) {
-      margin-bottom: 10px;
-    }
+    @include media-min(lg) { margin-bottom: 10px; }
   }
 
   &--last {
@@ -184,13 +180,9 @@
   background-size: cover, contain;
   padding-top: 25px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/mix-image-small@2x.png");
-  }
+  @media (min-resolution: 2dppx) { background-image: url("../img/mix-image-small@2x.png"); }
 
-  @include media-min(md) {
-    background-image: none;
-  }
+  @include media-min(md) { background-image: none; }
   @include media-min(lg) {
     max-width: 1550px;
     padding-left: 30px;
