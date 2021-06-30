@@ -22,15 +22,14 @@
 @mixin container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gapSm;
-  padding-left: $gapSm;
-  width: map-get($widths, sm);
+  padding-right: $gapS;
+  padding-left: $gapS;
+  box-sizing: border-box;
 
   @include media-min(md) {
-    width: 90%;
     min-width: map-get($widths, md);
-    padding-left: $gapMd;
-    padding-right: $gapMd;
+    padding-left: $gapSm;
+    padding-right: $gapSm;
   }
   @include media-min(lg) {
     min-width: map-get($widths, lg);
@@ -38,7 +37,7 @@
     padding-right: $gapLg;
   }
   @include media-min(xl) {
-    width: map-get($widths, xl);
+    min-width: map-get($widths, xl);
   }
 }
 @mixin title {
