@@ -70,7 +70,6 @@
   display: none;
 
   @include lists-base;
-
   @include media-min(lg) {
     display: flex;
     justify-content: space-between;
