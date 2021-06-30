@@ -28,8 +28,8 @@
 
   @include media-min(md) {
     min-width: map-get($widths, md);
-    padding-left: $gapSm;
-    padding-right: $gapSm;
+    padding-left: $gapMd;
+    padding-right: $gapMd;
   }
   @include media-min(lg) {
     min-width: map-get($widths, lg);
