@@ -14,12 +14,8 @@
   @include media-min(lg) { font-size: 24px; }
 
   &--gallery {
-    @include media-min(md) {
-      padding: 5px 36px 4px;
-    }
-    @include media-min(lg) {
-      padding: 11px 73px 9px;
-    }
+    @include media-min(md) { padding: 5px 36px 4px; }
+    @include media-min(lg) { padding: 11px 73px 9px; }
   }
 
   &--form-submit {
@@ -37,18 +33,12 @@
 
   &--introduction {
     @include media-min(md) {
-      padding-top: 6px;
-      padding-bottom: 4px;
-      padding-left: 31px;
       margin-left: 3px;
-      padding-right: 29px;
+      padding: 6px 29px 4px 31px;
     }
     @include media-min(lg) {
-      padding-top: 9px;
-      padding-bottom: 11px;
-      padding-left: 59px;
       margin-left: 117px;
-      padding-right: 55px;
+      padding: 9px 55px 11px 59px;
     }
   }
 
@@ -57,10 +47,7 @@
       margin-left: 540px;
       padding: 3px 20px 4px 22px;
     }
-    @include media-min(lg) {
-      margin-left: 1040px;
-      padding: 3px 20px 4px 22px;
-    }
+    @include media-min(lg) { margin-left: 1040px; }
     @include media-min(xl) {
       margin-left: 1190px;
       padding: 9px 55px 10px 63px;

@@ -25,41 +25,29 @@
     padding-bottom: 59px;
     background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big.png");
   }
-  @include media-min(xl) {
-    background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big@2x.png");
-  }
+  @include media-min(xl) { background-image: linear-gradient(transparent 322px, $color-bg 322px), url("../img/tryforhoneycomb-big@2x.png"); }
 }
 
-.results__wrapper {
-  @include rubber-stopper;
-}
+.results__wrapper { @include rubber-stopper; }
 
 .results__title {
   @include title;
 
   margin-bottom: 7px;
 
-  @include media-min(sm) {
-    margin-bottom: 10px;
-  }
-  @include media-min(lg) {
-    margin-bottom: 20px;
-  }
+  @include media-min(sm) { margin-bottom: 10px; }
+  @include media-min(lg) { margin-bottom: 20px; }
 }
 
 .results__text {
   margin-bottom: 28px;
 
-  @include media-min(sm) {
-    margin-bottom: 67px;
-  }
+  @include media-min(sm) { margin-bottom: 67px; }
   @include media-min(md) {
     max-width: 520px;
     margin: 0 auto;
   }
-  @include media-min(lg) {
-    max-width: 810px;
-  }
+  @include media-min(lg) { max-width: 810px; }
 }
 
 .results__gallery {
@@ -69,16 +57,12 @@
   padding-bottom: 15px;
   gap: 10px;
 
-  @include media-min(sm) {
-    padding-bottom: 23px;
-  }
+  @include media-min(sm) { padding-bottom: 23px; }
   @include media-min(md) {
-    gap: 29px;
+    gap: 28px;
     padding-bottom: 31px;
   }
-  @include media-min(lg) {
-    padding-bottom: 68px;
-  }
+  @include media-min(lg) { padding-bottom: 68px; }
   @include media-min(xl) {
     gap: 55px;
     padding-left: 56px;
@@ -102,17 +86,11 @@
     width: 25vw;
     max-width: initial;
   }
-  @include media-min(xl) {
-    width: 467px;
-  }
+  @include media-min(xl) { width: 467px; }
 }
 
 .results__description {
-  @include media-min(md) {
-    padding-bottom: 66px;
-  }
-  @include media-min(lg) {
-    padding-bottom: 153px;
-  }
+  @include media-min(md) { padding-bottom: 66px; }
+  @include media-min(lg) { padding-bottom: 153px; }
 }
 

@@ -3,15 +3,9 @@
   position: relative;
   order: 2;
 
-  @include media-min(sm) {
-    order: 0;
-  }
-  @include media-min(md) {
-    width: 60%;
-  }
-  @include media-min(lg) {
-    width: 63%;
-  }
+  @include media-min(sm) { order: 0; }
+  @include media-min(md) { width: 60%; }
+  @include media-min(lg) { width: 63%; }
 }
 
 .main-nav__social {
@@ -139,10 +133,9 @@
   z-index: 4;
   margin-left: 5px;
   margin-right: 15px;
+  cursor: pointer;
 
-  @include media-min(sm) {
-    display: none;
-  }
+  @include media-min(sm) { display: none; }
   @include media-max(sm) {
     &::after {
       width: 20px;
@@ -171,11 +164,7 @@
   }
 }
 
-.main-nav--cloced .main-nav__list {
-  @include media-max(sm) {
-    display: none;
-  }
-}
+.main-nav--cloced .main-nav__list { @include media-max(sm) { display: none; } }
 
 .main-nav--cloced .main-nav__toggle {
   @include media-max(sm) {
@@ -198,18 +187,10 @@
   }
 }
 
-.main-nav--cloced .main-nav__social {
-  display: none;
-}
+.main-nav--cloced .main-nav__social { display: none; }
 
 .main-nav__item {
-  @include media-min(sm) {
-    padding-right: 10px;
-  }
-  @include media-min(md) {
-    padding-right: 48px;
-  }
-  @include media-min(xl) {
-    padding-right: 67px;
-  }
+  @include media-min(sm) { padding-right: 10px; }
+  @include media-min(md) { padding-right: 48px; }
+  @include media-min(xl) { padding-right: 67px; }
 }

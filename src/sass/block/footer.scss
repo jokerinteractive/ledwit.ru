@@ -80,9 +80,7 @@
   }
 }
 
-.footer__navigation-item {
-  width: 102px;
-}
+.footer__navigation-item { width: 102px; }
 
 .footer__our-contacts-wrapper {
   width: 70%;
@@ -92,12 +90,8 @@
     display: flex;
     letter-spacing: normal;
   }
-  @include media-min(md) {
-    justify-content: space-between;
-  }
-  @include media-min(lg) {
-    padding-top: 32px;
-  }
+  @include media-min(md) { justify-content: space-between; }
+  @include media-min(lg) { padding-top: 32px; }
 }
 
 .footer__our-contacts {
@@ -134,9 +128,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include media-min(sm) {
-    gap: 15px;
-  }
+  @include media-min(sm) { gap: 15px; }
   @include media-min(md) {
     gap: 44px;
     padding-top: 3px;
@@ -153,15 +145,11 @@
 .footer__our-contact {
   margin-bottom: 3px;
 
-  @include media-min(md) {
-    margin-bottom: 0;
-  }
+  @include media-min(md) { margin-bottom: 0; }
 }
 
 .footer__our-contacts-phone {
   padding-left: 30px;
 
-  @include media-min(md) {
-    padding-left: 0;
-  }
+  @include media-min(md) { padding-left: 0; }
 }

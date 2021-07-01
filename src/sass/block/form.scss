@@ -72,21 +72,15 @@
   background: #bbd6ff;
   border: 1px solid #0b77f7;
 
-  @include media-min(md) {
-    height: 112px;
-  }
-  @include media-min(lg) {
-    height: 152px;
-  }
+  @include media-min(md) { height: 112px; }
+  @include media-min(lg) { height: 152px; }
 }
 
 .form__field {
   display: flex;
   flex-direction: column;
 
-  @include media-min(sm) {
-    font-size: 12px;
-  }
+  @include media-min(sm) { font-size: 12px; }
   @include media-min(md) {
     font-size: 13px;
     gap: 2px;
